@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linha Tropical | GO SPLASH PISCINAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .tropical-gradiente {
+            background: linear-gradient(45deg, #ed7b1f 0%, #ec0a83 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-navy { color: #001f3f; }
+        .bg-navy { background-color: #001f3f; }
+        .table-medidas th { background-color: #001f3f; color: white; padding: 12px; text-transform: uppercase; font-size: 11px; }
+        .table-medidas td { padding: 12px; border-bottom: 1px solid #edf2f7; font-size: 13px; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <nav class="fixed w-full z-50 bg-white shadow-md border-b-4 border-[#dfff00]">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center text-left">
+            <div class="text-3xl font-black text-navy uppercase italic">GO<span class="text-yellow-400">SPLASH</span></div>
+            <div class="hidden md:flex space-x-6 font-bold text-sm uppercase tracking-widest text-navy">
+                <a href="index.html" class="hover:text-blue-500">Início</a>
+                <a href="modelos.html" class="hover:text-blue-500">Piscinas</a>
+                <a href="produtos.html" class="hover:text-blue-500">Produtos</a>
+                <a href="sobre.html" class="hover:text-blue-500">A Empresa</a>
+                <a href="orcamento.html" class="hover:text-blue-500">Orçamento</a>
+            </div>
+            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs">
+                (34) 99737-3282
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-start text-left">
+            <div>
+                <img src="https://www.splashpiscinas.com/img/piscinas/tropical/tropical-branca.png" class="w-full drop-shadow-2xl mb-8" alt="Piscina Tropical">
+                <h1 class="text-5xl font-black uppercase tracking-tighter mb-4 tropical-gradiente">Linha Tropical</h1>
+                <p class="text-lg italic text-gray-600 mb-8 leading-relaxed">
+                    A piscina completa para quem não abre mão do conforto. Com <strong>prainha e escadas integradas</strong>, é o modelo perfeito para relaxar com crianças e amigos sob o sol de Catalão.
+                </p>
+                <a href="https://wa.me/5534997373282?text=Olá,%20gostaria%20de%20um%20orçamento%20da%20Piscina%20Tropical." 
+                   class="bg-green-500 text-white px-10 py-4 rounded-xl font-black uppercase shadow-lg hover:bg-green-600 transition inline-block">
+                   <i class="fab fa-whatsapp mr-2"></i> Solicitar Preço
+                </a>
+            </div>
+
+            <div class="bg-slate-50 p-8 rounded-[2.5rem] shadow-sm border-2 border-orange-100">
+                <h3 class="text-2xl font-bold text-navy mb-6 uppercase italic">Tabela de Medidas</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full table-medidas text-left">
+                        <thead>
+                            <tr>
+                                <th>Modelo</th>
+                                <th>Comp.</th>
+                                <th>Larg.</th>
+                                <th>Prof.</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr><td class="font-bold">Tropical 3.5</td><td>3,50m</td><td>1,80m</td><td>0,80m</td></tr>
+                            <tr class="bg-white"><td class="font-bold">Tropical 4.0</td><td>4,00m</td><td>2,00m</td><td>1,00m</td></tr>
+                            <tr><td class="font-bold">Tropical 5.0</td><td>5,00m</td><td>2,40m</td><td>1,40m</td></tr>
+                            <tr class="bg-white"><td class="font-bold">Tropical 6.0</td><td>6,00m</td><td>2,60m</td><td>1,40m</td></tr>
+                            <tr><td class="font-bold">Tropical 7.0</td><td>7,00m</td><td>2,80m</td><td>1,40m</td></tr>
+                            <tr class="bg-white"><td class="font-bold text-blue-600">Tropical 8.0</td><td>8,00m</td><td>3,00m</td><td>1,40m</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="mt-6 text-[10px] text-gray-400 italic">Preços sob consulta. Incluem casco, filtro pratic e instalação hidráulica básica em Catalão/GO.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-50 border-t border-gray-200 py-10 text-center text-xs text-gray-400 uppercase tracking-widest italic">
+        © 2026 GO SPLASH PISCINAS - Catalão/GO
+    </footer>
+
+</body>
+</html>
