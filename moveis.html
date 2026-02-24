@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Móveis e Lazer | GO SPLASH PISCINAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .text-navy { color: #001f3f; }
+        .bg-navy { background-color: #001f3f; }
+        .card-movel { border: 1px solid #f1f5f9; border-radius: 24px; transition: 0.3s; background: white; overflow: hidden; }
+        .card-movel:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700 font-sans text-center">
+
+    <nav class="fixed w-full z-50 bg-white shadow-md border-b-4 border-[#dfff00]">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center text-left">
+            <div class="text-3xl font-black text-navy uppercase italic">GO<span class="text-yellow-400">SPLASH</span></div>
+            <div class="hidden md:flex space-x-6 font-bold text-sm uppercase tracking-widest text-navy">
+                <a href="index.html" class="hover:text-blue-500">Início</a>
+                <a href="modelos.html" class="hover:text-blue-500">Piscinas</a>
+                <a href="produtos.html" class="hover:text-blue-500">Produtos</a>
+                <a href="moveis.html" class="text-blue-500 border-b-2 border-blue-500">Móveis</a>
+                <a href="orcamento.html" class="hover:text-blue-500">Orçamento</a>
+            </div>
+            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs">
+                (34) 99737-3282
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 container mx-auto px-4">
+        <div class="mb-16 text-left border-l-8 border-yellow-400 pl-6">
+            <h1 class="text-4xl font-black text-navy uppercase italic">Móveis e Decoração</h1>
+            <p class="text-gray-500 mt-2 italic">O conforto que faltava para o seu deck em Catalão.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="card-movel p-6">
+                <img src="https://cdn.splashpiscinas.com/assets/img/produtos/conjunto-gris.jpg" class="mx-auto h-48 object-cover rounded-xl mb-6" alt="Conjunto Gris">
+                <h3 class="font-bold text-xl text-navy uppercase mb-2 italic">Conjunto Gris</h3>
+                <p class="text-sm text-gray-500 mb-6 italic text-left">Elegância e durabilidade com design contemporâneo para sua área externa.</p>
+                <a href="https://wa.me/5534997373282?text=Olá,%20tenho%20interesse%20no%20Conjunto%20Gris." 
+                   class="block bg-blue-600 text-white py-3 rounded-xl font-black uppercase text-xs tracking-widest">Consultar</a>
+            </div>
+
+            <div class="card-movel p-6">
+                <img src="https://cdn.splashpiscinas.com/assets/img/produtos/espreguicadeira-arena.jpg" class="mx-auto h-48 object-cover rounded-xl mb-6" alt="Espreguiçadeira">
+                <h3 class="font-bold text-xl text-navy uppercase mb-2 italic">Espreguiçadeira Arena</h3>
+                <p class="text-sm text-gray-500 mb-6 italic text-left">Conforto anatômico resistente ao sol e à chuva. Perfeita para relaxar.</p>
+                <a href="https://wa.me/5534997373282?text=Olá,%20tenho%20interesse%20na%20Espreguiçadeira%20Arena." 
+                   class="block bg-blue-600 text-white py-3 rounded-xl font-black uppercase text-xs tracking-widest">Consultar</a>
+            </div>
+
+            <div class="card-movel p-6">
+                <img src="https://cdn.splashpiscinas.com/assets/img/produtos/ombrelone-copa.jpg" class="mx-auto h-48 object-cover rounded-xl mb-6" alt="Ombrelone">
+                <h3 class="font-bold text-xl text-navy uppercase mb-2 italic">Ombrelone Copa</h3>
+                <p class="text-sm text-gray-500 mb-6 italic text-left">Proteção solar com estilo. Ajustável e robusto para o seu jardim.</p>
+                <a href="https://wa.me/5534997373282?text=Olá,%20tenho%20interesse%20no%20Ombrelone%20Copa." 
+                   class="block bg-blue-600 text-white py-3 rounded-xl font-black uppercase text-xs tracking-widest">Consultar</a>
+            </div>
+
+        </div>
+
+        <div class="mt-20 bg-yellow-400 p-12 rounded-[3rem] text-navy shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="text-left max-w-lg">
+                <h2 class="text-3xl font-black uppercase italic mb-2 italic">Lazer Completo</h2>
+                <p class="italic text-navy/80 leading-relaxed font-bold">Oferecemos a linha completa de móveis Splash/Progeu para Catalão e Monte Carmelo. Qualidade que você sente no toque.</p>
+            </div>
+            <a href="orcamento.html" class="bg-navy text-white font-black px-12 py-5 rounded-2xl uppercase hover:scale-105 transition shadow-lg inline-block">Falar com Equipe Comercial</a>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-10 text-center text-xs text-gray-400 uppercase tracking-widest italic">
+        © 2026 GO SPLASH PISCINAS - Catalão/GO
+    </footer>
+
+</body>
+</html>
