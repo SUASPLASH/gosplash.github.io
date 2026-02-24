@@ -3,32 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GO SPLASH | O mergulho dos seus sonhos !</title>
+    <title>Modelos de Piscinas | GO SPLASH</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .bg-navy { background-color: #001f3f; }
+        .text-navy { color: #001f3f; }
+        .card-piscina { transition: 0.3s; border-radius: 20px; overflow: hidden; background: white; border: 1px solid #eee; }
+        .card-piscina:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+    </style>
 </head>
-<body class="bg-[#001f3f] text-white font-sans">
-    <nav class="fixed w-full z-50 bg-[#001f3f]/90 backdrop-blur-md border-b border-[#dfff00]/20">
-        <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
-            <div class="text-3xl font-black text-[#dfff00] uppercase italic tracking-tighter">GO<span class="text-white">SPLASH</span></div>
-            <a href="https://wa.me/5534997373282" class="bg-[#dfff00] text-[#001f3f] px-6 py-2 rounded-full font-black text-sm">CONTATO</a>
+<body class="bg-gray-50 text-gray-700 font-sans">
+
+    <nav class="fixed w-full z-50 bg-white shadow-md border-b-4 border-[#dfff00]">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center text-left">
+            <div class="text-3xl font-black text-navy uppercase italic">GO<span class="text-yellow-400">SPLASH</span></div>
+            <div class="hidden md:flex space-x-6 font-bold text-xs uppercase tracking-widest text-navy">
+                <a href="index.html" class="hover:text-blue-500">Início</a>
+                <a href="modelos.html" class="text-blue-500 border-b-2 border-blue-500">Piscinas</a>
+                <a href="produtos.html" class="hover:text-blue-500">Produtos</a>
+                <a href="sobre.html" class="hover:text-blue-500">A Empresa</a>
+                <a href="orcamento.html" class="hover:text-blue-500">Orçamento</a>
+            </div>
+            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs">
+                (34) 99737-3282
+            </a>
         </div>
     </nav>
-    <section class="relative h-screen flex items-center justify-center overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1920&q=80" class="absolute w-full h-full object-cover opacity-30">
-        <div class="relative z-10 text-center px-4">
-            <div class="inline-block bg-[#dfff00] text-[#001f3f] font-black px-4 py-1 mb-6 skew-x-[-10deg] text-xs uppercase tracking-widest">Inauguração com Promoção Especial</div>
-            <h1 class="text-6xl md:text-9xl font-black mb-4 tracking-tighter text-[#dfff00] italic uppercase">GO SPLASH</h1>
-            <p class="text-xl md:text-2xl font-light italic mb-10 text-white">"O mergulho dos seus sonhos !"</p>
-            <a href="https://wa.me/5534997373282" class="bg-[#dfff00] text-[#001f3f] px-12 py-5 rounded-xl font-black uppercase text-lg">Falar com Consultor</a>
+
+    <main class="pt-32 pb-20 container mx-auto px-4">
+        <div class="text-left border-l-8 border-[#dfff00] pl-6 mb-12">
+            <h1 class="text-4xl font-black text-navy uppercase italic">Nossos Modelos</h1>
+            <p class="text-gray-500 italic">Escolha o design que mais combina com a sua casa em Catalão.</p>
         </div>
-    </section>
-    <footer class="bg-black py-16 border-t-4 border-[#dfff00]">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-gray-400 text-sm mb-4">Av. Margon, 1303 - sl 1 - Vila Margon, Catalão - GO</p>
-            <p class="text-lg font-black text-[#dfff00]">CNPJ: 50.574.273/0001-18</p>
-            <p class="text-lg font-black text-white">(34) 99737-3282</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="card-piscina p-8 flex flex-col items-center">
+                <img src="https://www.splashpiscinas.com/img/piscinas/italiana/italiana-8m-azul.png" class="w-full h-64 object-contain mb-6" alt="Piscina Italiana">
+                <h2 class="text-2xl font-black text-navy uppercase italic mb-4">Linha Italiana</h2>
+                <p class="text-center text-sm mb-6 italic">Design clássico com bordas arredondadas e o melhor custo-benefício.</p>
+                <a href="italiana.html" class="bg-blue-600 text-white px-8 py-3 rounded-full font-bold uppercase text-xs">Ver Medidas e Preços</a>
+            </div>
+
+            <div class="card-piscina p-8 flex flex-col items-center">
+                <img src="https://www.splashpiscinas.com/img/piscinas/tropical/tropical-branca.png" class="w-full h-64 object-contain mb-6" alt="Piscina Tropical">
+                <h2 class="text-2xl font-black text-navy uppercase italic mb-4">Linha Tropical</h2>
+                <p class="text-center text-sm mb-6 italic">Formas modernas com prainha e escadas integradas para mais conforto.</p>
+                <a href="tropical.html" class="bg-blue-600 text-white px-8 py-3 rounded-full font-bold uppercase text-xs">Ver Medidas e Preços</a>
+            </div>
         </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-10 text-center text-xs text-gray-400 uppercase tracking-widest italic">
+        © 2026 GO SPLASH PISCINAS - Catalão/GO
     </footer>
+
 </body>
 </html>
