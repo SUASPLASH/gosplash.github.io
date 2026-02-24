@@ -10,7 +10,7 @@
         .bg-navy { background-color: #001f3f; }
         .text-navy { color: #001f3f; }
         .card-piscina { transition: 0.3s; border-radius: 20px; overflow: hidden; background: white; border: 1px solid #eee; }
-        .card-piscina:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .card-piscina:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-700 font-sans">
@@ -25,7 +25,7 @@
                 <a href="sobre.html" class="hover:text-blue-500">A Empresa</a>
                 <a href="orcamento.html" class="hover:text-blue-500">Orçamento</a>
             </div>
-            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs">
+            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs italic">
                 (34) 99737-3282
             </a>
         </div>
@@ -34,49 +34,60 @@
     <main class="pt-32 pb-20 container mx-auto px-4">
         <div class="border-l-8 border-[#dfff00] pl-6 mb-12 text-left">
             <h1 class="text-4xl font-black text-navy uppercase italic">Nossos Modelos</h1>
-            <p class="text-gray-500 italic font-bold">As melhores opções para Catalão e região.</p>
+            <p class="text-gray-500 italic font-bold">A maior variedade de Catalão e região.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <div class="card-piscina p-8 flex flex-col items-center">
-                <img src="https://cdn.splashpiscinas.com/assets/img/italiana/italiana-8m-azul.png" class="w-full h-64 object-contain mb-6" alt="Piscina Italiana">
-                <h2 class="text-2xl font-black text-navy uppercase italic mb-2">Linha Italiana</h2>
-                <p class="text-center text-sm mb-6 italic text-gray-500">A queridinha do Brasil. Design clássico que valoriza qualquer área de lazer.</p>
-                <div class="flex gap-4">
-                    <a href="italiana.html" class="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold uppercase text-xs hover:bg-blue-700">Ver Detalhes</a>
-                </div>
+            <div class="card-piscina p-6 flex flex-col items-center">
+                <img src="italiana.png" class="w-full h-48 object-contain mb-4">
+                <h2 class="text-xl font-black text-navy uppercase italic text-center">Italiana</h2>
+                <a href="italiana.html" class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Detalhes</a>
             </div>
 
-            <div class="card-piscina p-8 flex flex-col items-center">
-                <img src="https://cdn.splashpiscinas.com/assets/img/tropical/tropical-7m-branca.png" class="w-full h-64 object-contain mb-6" alt="Piscina Tropical">
-                <h2 class="text-2xl font-black text-navy uppercase italic mb-2">Linha Tropical</h2>
-                <p class="text-center text-sm mb-6 italic text-gray-500">Modernidade com prainha e escadas internas. Conforto total para sua família.</p>
-                <div class="flex gap-4">
-                    <a href="tropical.html" class="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold uppercase text-xs hover:bg-blue-700">Ver Detalhes</a>
-                </div>
+            <div class="card-piscina p-6 flex flex-col items-center">
+                <img src="tropical13a.jpg" class="w-full h-48 object-contain mb-4">
+                <h2 class="text-xl font-black text-navy uppercase italic text-center">Tropical</h2>
+                <a href="tropical.html" class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Detalhes</a>
             </div>
 
-            <div class="card-piscina p-8 flex flex-col items-center">
-                <img src="https://cdn.splashpiscinas.com/assets/img/piscinas/farol-da-barra/farol-da-barra-azul.png" class="w-full h-64 object-contain mb-6" alt="Piscina Farol da Barra">
-                <h2 class="text-2xl font-black text-navy uppercase italic mb-2">Farol da Barra</h2>
-                <p class="text-center text-sm mb-6 italic text-gray-500">Compacta e elegante, ideal para espaços menores com muito estilo.</p>
-                <a href="https://wa.me/5534997373282" class="bg-green-500 text-white px-6 py-3 rounded-xl font-bold uppercase text-xs">Pedir Orçamento</a>
+            <div class="card-piscina p-6 flex flex-col items-center">
+                <img src="atalaia-azul.png" class="w-full h-48 object-contain mb-4">
+                <h2 class="text-xl font-black text-navy uppercase italic text-center">Atalaia</h2>
+                <a href="https://wa.me/5534997373282" class="mt-4 bg-green-500 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Orçamento</a>
             </div>
 
-            <div class="card-piscina p-8 flex flex-col items-center">
-                <img src="https://cdn.splashpiscinas.com/assets/img/piscinas/spa/spa-azul.png" class="w-full h-64 object-contain mb-6" alt="Spa Splash">
-                <h2 class="text-2xl font-black text-navy uppercase italic mb-2">Spas & Hidro</h2>
-                <p class="text-center text-sm mb-6 italic text-gray-500">O relaxamento que você merece com jatos de hidromassagem integrados.</p>
-                <a href="https://wa.me/5534997373282" class="bg-green-500 text-white px-6 py-3 rounded-xl font-bold uppercase text-xs">Pedir Orçamento</a>
+            <div class="card-piscina p-6 flex flex-col items-center">
+                <img src="cancun-azul.png" class="w-full h-48 object-contain mb-4">
+                <h2 class="text-xl font-black text-navy uppercase italic text-center">Cancun</h2>
+                <a href="https://wa.me/5534997373282" class="mt-4 bg-green-500 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Orçamento</a>
+            </div>
+
+            <div class="card-piscina p-6 flex flex-col items-center">
+                <img src="tortuga_azul-s-pastilhas.png" class="w-full h-48 object-contain mb-4">
+                <h2 class="text-xl font-black text-navy uppercase italic text-center">Tortuga</h2>
+                <a href="https://wa.me/5534997373282" class="mt-4 bg-green-500 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Orçamento</a>
+            </div>
+
+            <div class="card-piscina p-6 flex flex-col items-center">
+                <img src="nassau-azul.png" class="w-full h-48 object-contain mb-4">
+                <h2 class="text-xl font-black text-navy uppercase italic text-center">Nassau</h2>
+                <a href="https://wa.me/5534997373282" class="mt-4 bg-green-500 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Orçamento</a>
+            </div>
+
+            <div class="card-piscina p-6 flex flex-col items-center">
+                <img src="bonaire-branca.png" class="w-full h-48 object-contain mb-4">
+                <h2 class="text-xl font-black text-navy uppercase italic text-center">Bonaire</h2>
+                <a href="https://wa.me/5534997373282" class="mt-4 bg-green-500 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Orçamento</a>
+            </div>
+
+            <div class="card-piscina p-6 flex flex-col items-center">
+                <img src="splash-tradicional-8m-SPA-e-pastilha-porcelana-azul.png" class="w-full h-48 object-contain mb-4">
+                <h2 class="text-xl font-black text-navy uppercase italic text-center">Tradicional</h2>
+                <a href="tradicional.html" class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Detalhes</a>
             </div>
 
         </div>
     </main>
-
-    <footer class="bg-white border-t border-gray-200 py-10 text-center text-xs text-gray-400 uppercase tracking-widest italic">
-        © 2026 GO SPLASH PISCINAS - Catalão/GO
-    </footer>
-
 </body>
 </html>
