@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos e Acessórios | GO SPLASH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .text-navy { color: #001f3f; }
+        .bg-navy { background-color: #001f3f; }
+        .box-produto { border: 1px solid #eee; border-radius: 20px; transition: 0.3s; background: white; }
+        .box-produto:hover { transform: scale(1.02); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700 font-sans">
+
+    <nav class="fixed w-full z-50 bg-white shadow-md border-b-4 border-[#dfff00]">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center text-left">
+            <div class="text-3xl font-black text-navy uppercase italic">GO<span class="text-yellow-400">SPLASH</span></div>
+            <div class="hidden md:flex space-x-6 font-bold text-sm uppercase tracking-widest text-navy">
+                <a href="index.html" class="hover:text-blue-500">Início</a>
+                <a href="modelos.html" class="hover:text-blue-500">Piscinas</a>
+                <a href="produtos.html" class="text-blue-500 border-b-2 border-blue-500">Produtos</a>
+                <a href="sobre.html" class="hover:text-blue-500">A Empresa</a>
+                <a href="orcamento.html" class="hover:text-blue-500">Orçamento</a>
+            </div>
+            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs">
+                (34) 99737-3282
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 container mx-auto px-4">
+        <div class="text-left border-l-8 border-[#dfff00] pl-6 mb-12">
+            <h1 class="text-4xl font-black text-blue-900 uppercase italic">Acessórios e Tecnologia</h1>
+            <p class="text-gray-500 italic">Tudo o que você precisa para automatizar e aquecer seu lazer.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="box-produto p-6">
+                <img src="https://cdn.splashpiscinas.com/assets/img/produtos/thermas-mini-01.webp" class="mx-auto h-40 object-contain mb-4">
+                <h4 class="text-xl font-bold text-navy mb-2 uppercase italic">Aquecimento Kelvin</h4>
+                <p class="text-sm text-gray-500 mb-6 italic">Piscina quente o ano todo com economia e tecnologia.</p>
+                <a href="aquecimento.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-bold uppercase text-xs">Saiba Mais</a>
+            </div>
+
+            <div class="box-produto p-6">
+                <img src="https://cdn.splashpiscinas.com/assets/img/produtos/clorador.webp" class="mx-auto h-40 object-contain mb-4">
+                <h4 class="text-xl font-bold text-navy mb-2 uppercase italic">Clorador iGUi</h4>
+                <p class="text-sm text-gray-500 mb-6 italic">Tratamento automático que mantém a água cristalina.</p>
+                <a href="https://wa.me/5534997373282" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-bold uppercase text-xs">Ver Preço</a>
+            </div>
+
+            <div class="box-produto p-6">
+                <img src="https://www.splashpiscinas.com/img/produtos/cascata_flipper01.jpg" class="mx-auto h-40 object-contain mb-4">
+                <h4 class="text-xl font-bold text-navy mb-2 uppercase italic">Linha de Cascatas</h4>
+                <p class="text-sm text-gray-500 mb-6 italic">Beleza e o som relaxante da água no seu quintal.</p>
+                <a href="cascatas.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-bold uppercase text-xs">Ver Modelos</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-10 text-center text-xs text-gray-400 uppercase tracking-widest italic">
+        © 2026 GO SPLASH PISCINAS - Catalão/GO
+    </footer>
+
+</body>
+</html>
