@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orçamento VIP | GO SPLASH PISCINAS</title>
+    <title>Solicitar Orçamento | GO SPLASH</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -14,83 +14,110 @@
             background-size: cover;
             background-position: center;
         }
+        #mobile-menu { transition: all 0.3s ease-in-out; }
+        .menu-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+        .menu-closed { transform: translateY(-20px); opacity: 0; pointer-events: none; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans text-left">
 
-    <nav class="fixed w-full z-50 bg-white shadow-md border-b-4 border-[#dfff00]">
-        <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center text-left">
-            <div class="text-3xl font-black text-navy uppercase italic">GO<span class="text-yellow-400">SPLASH</span></div>
-            <div class="hidden md:flex space-x-6 font-bold text-xs uppercase tracking-widest text-navy">
+    <nav class="fixed w-full z-[100] bg-white shadow-md border-b-4 border-[#dfff00]">
+        <div class="max-w-7xl mx-auto px-4 h-24 flex justify-between items-center">
+            <a href="index.html" class="bg-navy px-4 md:px-6 py-3 rounded-2xl shadow-lg border-b-4 border-[#dfff00] transform -skew-x-6 hover:scale-105 transition">
+                <div class="text-xl md:text-3xl font-black italic uppercase tracking-tighter text-white">
+                    GO<span class="text-[#dfff00]">SPLASH</span>
+                </div>
+            </a>
+
+            <div class="hidden lg:flex space-x-6 font-bold text-xs uppercase tracking-widest text-navy">
                 <a href="index.html" class="hover:text-blue-500">Início</a>
                 <a href="modelos.html" class="hover:text-blue-500">Piscinas</a>
-                <a href="produtos.html" class="hover:text-blue-500">Produtos</a>
+                <a href="produtos.html" class="hover:text-blue-500 text-left">Produtos</a>
                 <a href="sobre.html" class="hover:text-blue-500 text-left">A Empresa</a>
-                <a href="orcamento.html" class="text-blue-500 border-b-2 border-blue-500">Orçamento</a>
+                <a href="orcamento.html" class="text-blue-500 border-b-2 border-blue-500 text-left">Orçamento</a>
             </div>
-            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs italic">(34) 99737-3282</a>
+
+            <div class="flex items-center gap-2">
+                <a href="https://wa.me/5534997373282" class="bg-navy text-white px-4 py-3 rounded-full font-bold text-[10px] md:text-xs italic shadow-md border-l-4 border-yellow-400">
+                    (34) 99737-3282
+                </a>
+                <button onclick="toggleMenu()" class="lg:hidden text-navy text-2xl p-2 focus:outline-none">
+                    <i class="fas fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="lg:hidden bg-navy menu-closed absolute w-full left-0 top-24 border-b-8 border-[#dfff00] shadow-2xl">
+            <div class="flex flex-col p-6 space-y-4 font-black text-white uppercase italic tracking-widest text-center text-left">
+                <a href="index.html" class="py-3 border-b border-white/10">Início</a>
+                <a href="modelos.html" class="py-3 border-b border-white/10">Piscinas</a>
+                <a href="produtos.html" class="py-3 border-b border-white/10">Produtos</a>
+                <a href="sobre.html" class="py-3 border-b border-white/10 text-left">A Empresa</a>
+                <a href="orcamento.html" class="py-3 text-yellow-400 text-left">Orçamento</a>
+            </div>
         </div>
     </nav>
 
-    <header class="orcamento-banner h-[50vh] flex items-center justify-center text-center text-white px-4 pt-20 text-left">
-        <div class="max-w-4xl">
-            <h1 class="text-5xl md:text-6xl font-black uppercase italic mb-4">Solicite seu Projeto</h1>
-            <p class="text-xl italic text-yellow-400 font-bold">Consultoria técnica gratuita em Catalão e região</p>
+    <header class="orcamento-banner h-[45vh] flex items-center justify-center text-center text-white px-4 pt-20">
+        <div class="max-w-4xl text-left">
+            <h1 class="text-5xl md:text-7xl font-black uppercase italic mb-4 leading-tight">Orçamento VIP</h1>
+            <p class="text-xl italic text-yellow-400 font-bold uppercase tracking-widest">Transforme seu quintal em um paraíso</p>
         </div>
     </header>
 
     <main class="py-20 container mx-auto px-4">
-        <div class="max-w-4xl mx-auto bg-white rounded-[3rem] shadow-2xl overflow-hidden flex flex-col md:flex-row border-b-8 border-blue-600">
+        <div class="max-w-4xl mx-auto bg-white rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col md:flex-row border-b-8 border-blue-600">
             <div class="md:w-1/3 bg-navy p-10 text-white text-left">
-                <h3 class="text-2xl font-black uppercase italic mb-8 text-yellow-400">O que você ganha:</h3>
+                <h3 class="text-2xl font-black uppercase italic mb-8 text-yellow-400">Benefícios:</h3>
                 <ul class="space-y-6 text-sm italic">
-                    <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i> Visita técnica de um profissional especializado.</li>
-                    <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i> Projeto personalizado com Arquiteto e Engenheiro.</li>
-                    <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i> Análise do solo e melhor posição solar.</li>
-                    <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i> Orçamento detalhado com parcelamento sem juros.</li>
+                    <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i> Projeto técnico sem custo.</li>
+                    <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i> Análise de solo e posicionamento solar.</li>
+                    <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i> Preços exclusivos de revenda.</li>
                 </ul>
             </div>
-
             <div class="md:w-2/3 p-10 text-left">
-                <h2 class="text-3xl font-black text-navy uppercase italic mb-4">Agende Agora</h2>
-                <p class="text-gray-500 italic mb-10">Escolha a forma mais rápida de falar com nossa equipe técnica:</p>
-                
+                <h2 class="text-3xl font-black text-navy uppercase italic mb-6 leading-tight">Agende seu Sonho</h2>
                 <div class="space-y-6">
-                    <a href="https://wa.me/5534997373282?text=Olá! Gostaria de agendar a visita técnica gratuita e o meu projeto com o engenheiro." 
-                       class="flex items-center justify-between bg-green-500 text-white p-6 rounded-2xl hover:scale-105 transition shadow-lg group">
+                    <a href="https://wa.me/5534997373282?text=Olá! Vi o site e quero agendar meu projeto VIP grátis." 
+                       class="flex items-center justify-between bg-green-500 text-white p-6 rounded-2xl hover:scale-105 transition shadow-lg">
                         <div class="flex items-center gap-4">
                             <i class="fab fa-whatsapp text-4xl"></i>
                             <div>
                                 <span class="block font-black uppercase italic">WhatsApp Direto</span>
-                                <span class="text-xs opacity-80 uppercase italic font-bold">Resposta em poucos minutos</span>
+                                <span class="text-xs opacity-80 uppercase font-bold italic">Falar com Consultor</span>
                             </div>
                         </div>
-                        <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition"></i>
                     </a>
-
-                    <a href="modelos.html" class="flex items-center justify-between bg-gray-100 text-navy p-6 rounded-2xl hover:bg-gray-200 transition group">
-                        <div class="flex items-center gap-4 text-left">
-                            <i class="fas fa-swimming-pool text-3xl"></i>
-                            <div>
-                                <span class="block font-black uppercase italic">Ver Modelos Primeiro</span>
-                                <span class="text-xs opacity-60 uppercase italic font-bold">Escolha seu estilo favorito</span>
-                            </div>
-                        </div>
-                        <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition"></i>
-                    </a>
-                </div>
-
-                <div class="mt-12 p-6 bg-blue-50 rounded-2xl border-l-4 border-blue-500 italic text-sm text-blue-800">
-                    <i class="fas fa-info-circle mr-2"></i> Atendemos em Catalão, Ouvidor, Três Ranchos e toda a região.
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="bg-white pt-20 pb-12 border-t text-center">
+    <footer class="bg-white pt-20 pb-12 border-t text-center text-gray-800">
         <div class="container mx-auto px-4">
-            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 mb-16 px-4">
-                <img src="IGUi-piscinas-logo-oficial.png" class="h-10 object-contain" alt="iGUi">
-                <img src="google selos.png" class="h-16 object-contain" alt="Google">
-                <img src="mercadopago-logo.png" class="h-14 object-contain" alt="Mercado Pago">
-                <img src="reclamaaqui.png" class="h-16 object-contain" alt="
+            <div class="flex flex-wrap justify-center items-center gap-10 mb-16 px-4">
+                <img src="IGUi-piscinas-logo-oficial.png" class="h-10 object-contain">
+                <img src="google selos.png" class="h-16 object-contain">
+                <img src="reclamaaqui.png" class="h-16 object-contain">
+                <img src="selos.png" class="h-14 object-contain">
+            </div>
+            <p class="font-black text-navy uppercase tracking-widest text-xs mb-2 italic">GO SPLASH PISCINAS - CATALÃO/GO</p>
+            <p class="opacity-60 text-[10px] font-bold uppercase italic">CNPJ: 50.574.273/0001-18</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if(menu.classList.contains('menu-closed')) {
+                menu.classList.remove('menu-closed'); menu.classList.add('menu-open');
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                menu.classList.remove('menu-open'); menu.classList.add('menu-closed');
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        }
+    </script>
+</body>
+</html>
