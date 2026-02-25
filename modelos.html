@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelos de Piscinas | GO SPLASH</title>
+    <title>Catálogo de Modelos | GO SPLASH</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .text-navy { color: #001f3f; }
         .bg-navy { background-color: #001f3f; }
         .modelos-banner { 
-            background: linear-gradient(rgba(0,31,63,0.5), rgba(0,31,63,0.5)), url('fundo7.jpeg');
+            background: linear-gradient(rgba(0,31,63,0.6), rgba(0,31,63,0.6)), url('fundo7.jpeg');
             background-size: cover;
             background-position: center;
         }
+        .table-row:nth-child(even) { background-color: #f8fafc; }
     </style>
 </head>
 <body class="bg-white text-gray-800 font-sans text-left">
 
     <nav class="fixed w-full z-50 bg-white shadow-md border-b-4 border-[#dfff00]">
-        <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
-            <div class="text-3xl font-black text-navy uppercase italic">GO<span class="text-yellow-400">SPLASH</span></div>
+        <div class="max-w-7xl mx-auto px-4 h-24 flex justify-between items-center">
+            <a href="index.html" class="bg-navy px-6 py-3 rounded-2xl shadow-lg border-b-4 border-[#dfff00] transform -skew-x-6 hover:scale-105 transition">
+                <div class="text-2xl md:text-3xl font-black italic uppercase tracking-tighter text-white">
+                    GO<span class="text-[#dfff00]">SPLASH</span>
+                </div>
+            </a>
             <div class="hidden md:flex space-x-6 font-bold text-xs uppercase tracking-widest text-navy">
                 <a href="index.html" class="hover:text-blue-500">Início</a>
                 <a href="modelos.html" class="text-blue-500 border-b-2 border-blue-500">Piscinas</a>
@@ -28,48 +33,116 @@
                 <a href="sobre.html" class="hover:text-blue-500">A Empresa</a>
                 <a href="orcamento.html" class="hover:text-blue-500">Orçamento</a>
             </div>
-            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs italic">(34) 99737-3282</a>
+            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-6 py-3 rounded-full font-bold text-xs italic shadow-md border-l-4 border-yellow-400">
+                (34) 99737-3282
+            </a>
         </div>
     </nav>
 
     <header class="modelos-banner h-[50vh] flex items-center justify-center text-center text-white px-4 pt-20">
         <div class="max-w-4xl">
-            <h1 class="text-5xl md:text-6xl font-black uppercase italic mb-4">Nossos Modelos</h1>
-            <p class="text-xl italic text-yellow-400 font-bold">A maior variedade de fibra e pastilhas da região</p>
+            <h1 class="text-5xl md:text-7xl font-black uppercase italic mb-4 leading-tight">Escolha sua Splash</h1>
+            <p class="text-xl italic text-yellow-400 font-bold uppercase tracking-widest">Modelos Pastilhados e de Fibra de Alta Resistência</p>
         </div>
     </header>
 
     <main class="py-20 container mx-auto px-4">
-        <div class="mb-20 text-left">
-            <h2 class="text-3xl font-black text-navy uppercase italic mb-8 border-l-8 border-blue-600 pl-6">Linha Premium (Pastilhadas)</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="relative overflow-hidden rounded-[3rem] shadow-xl group">
-                    <img src="fundo8.jpeg" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-80"></div>
-                    <div class="absolute bottom-8 left-8 text-white">
-                        <h3 class="text-2xl font-black uppercase italic">Linha Italiana</h3>
-                        <p class="text-sm italic opacity-80">Sofisticação com pastilhas de porcelana.</p>
-                    </div>
+        
+        <section class="mb-24">
+            <div class="flex flex-col md:flex-row gap-12 items-center mb-12">
+                <div class="md:w-1/2">
+                    <img src="fundo8.jpeg" class="rounded-[3rem] shadow-2xl border-4 border-blue-600 h-[400px] w-full object-cover" alt="Linha Italiana">
                 </div>
-                <div class="relative overflow-hidden rounded-[3rem] shadow-xl group text-left">
-                    <img src="fundo3.jpeg" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-80"></div>
-                    <div class="absolute bottom-8 left-8 text-white">
-                        <h3 class="text-2xl font-black uppercase italic text-left">Linha Tropical</h3>
-                        <p class="text-sm italic opacity-80 text-left">Bordas infinitas e design orgânico.</p>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-black text-navy uppercase italic mb-6 border-l-8 border-blue-600 pl-6">Linha Italiana</h2>
+                    <p class="text-lg italic text-gray-600 mb-6">A sofisticação das pastilhas de porcelana com a rapidez da instalação Splash. O topo do luxo para o seu lazer.</p>
+                    
+                    <div class="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
+                        <table class="w-full text-sm text-left">
+                            <thead class="bg-navy text-white uppercase italic text-xs">
+                                <tr>
+                                    <th class="px-6 py-4">Modelo</th>
+                                    <th class="px-6 py-4">Tamanho (m)</th>
+                                    <th class="px-6 py-4">Preço Sugerido*</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-700">
+                                <tr class="table-row">
+                                    <td class="px-6 py-4 font-bold uppercase">Italiana 500</td>
+                                    <td class="px-6 py-4 italic">5.00 x 2.50 x 1.40</td>
+                                    <td class="px-6 py-4 font-black text-blue-600">R$ 28.900,00</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="px-6 py-4 font-bold uppercase">Italiana 700</td>
+                                    <td class="px-6 py-4 italic">7.00 x 3.00 x 1.40</td>
+                                    <td class="px-6 py-4 font-black text-blue-600">R$ 39.500,00</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="px-6 py-4 font-bold uppercase">Italiana 900</td>
+                                    <td class="px-6 py-4 italic">9.00 x 3.50 x 1.40</td>
+                                    <td class="px-6 py-4 font-black text-blue-600">R$ 54.800,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <section class="bg-gray-100 p-12 rounded-[4rem] text-center mb-20 border-t-8 border-yellow-400">
-            <h2 class="text-3xl font-black text-navy uppercase italic mb-6">Não encontrou o que procurava?</h2>
-            <p class="text-lg italic text-gray-600 mb-8">Nossa equipe de arquitetos pode te ajudar a escolher o modelo ideal para o seu terreno.</p>
-            <a href="orcamento.html" class="bg-blue-600 text-white px-10 py-4 rounded-full font-black uppercase italic hover:bg-navy transition shadow-lg inline-block">Solicitar Catálogo PDF</a>
         </section>
+
+        <section class="mb-24">
+            <div class="flex flex-col md:flex-row-reverse gap-12 items-center mb-12">
+                <div class="md:w-1/2">
+                    <img src="fundo3.jpeg" class="rounded-[3rem] shadow-2xl border-4 border-yellow-400 h-[400px] w-full object-cover" alt="Linha Tropical">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-black text-navy uppercase italic mb-6 border-l-8 border-yellow-400 pl-6 text-right md:text-left">Linha Tropical</h2>
+                    <p class="text-lg italic text-gray-600 mb-6 text-right md:text-left">Design orgânico com bordas arredondadas que simulam uma praia particular. Perfeita para relaxar.</p>
+                    
+                    <div class="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
+                        <table class="w-full text-sm text-left">
+                            <thead class="bg-navy text-white uppercase italic text-xs">
+                                <tr>
+                                    <th class="px-6 py-4">Modelo</th>
+                                    <th class="px-6 py-4">Tamanho (m)</th>
+                                    <th class="px-6 py-4">Preço Sugerido*</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-700">
+                                <tr class="table-row">
+                                    <td class="px-6 py-4 font-bold uppercase">Tropical 400</td>
+                                    <td class="px-6 py-4 italic">4.00 x 2.20 x 1.30</td>
+                                    <td class="px-6 py-4 font-black text-blue-600">R$ 19.800,00</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="px-6 py-4 font-bold uppercase">Tropical 600</td>
+                                    <td class="px-6 py-4 italic">6.00 x 2.80 x 1.40</td>
+                                    <td class="px-6 py-4 font-black text-blue-600">R$ 27.600,00</td>
+                                </tr>
+                                <tr class="table-row">
+                                    <td class="px-6 py-4 font-bold uppercase">Tropical 800</td>
+                                    <td class="px-6 py-4 italic">8.00 x 3.30 x 1.40</td>
+                                    <td class="px-6 py-4 font-black text-blue-600">R$ 41.200,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 p-12 rounded-[4rem] text-center mb-20 border-t-8 border-blue-600">
+            <h2 class="text-3xl md:text-5xl font-black text-navy uppercase italic mb-6">Quer um tamanho personalizado?</h2>
+            <p class="text-xl italic text-gray-600 mb-8 max-w-2xl mx-auto">Nossa equipe técnica pode ajustar o projeto de acordo com a sua área de lazer disponível. Solicite agora sua visita gratuita!</p>
+            <a href="https://wa.me/5534997373282?text=Vi os preços no site e quero negociar um desconto para o modelo..." 
+               class="bg-green-500 text-white px-12 py-5 rounded-full font-black uppercase italic hover:scale-105 transition shadow-2xl inline-block">
+                Negociar Preço no WhatsApp
+            </a>
+            <p class="text-xs text-gray-400 mt-6 uppercase italic tracking-widest">*Valores sujeitos a alteração sem aviso prévio. Instalação básica inclusa.</p>
+        </section>
+
     </main>
 
-    <footer class="bg-white pt-20 pb-12 border-t text-center">
+    <footer class="bg-white pt-20 pb-12 border-t text-center text-gray-800">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 mb-16 px-4">
                 <img src="IGUi-piscinas-logo-oficial.png" class="h-10 object-contain" alt="iGUi">
@@ -77,11 +150,16 @@
                 <img src="mercadopago-logo.png" class="h-14 object-contain" alt="Mercado Pago">
                 <img src="reclamaaqui.png" class="h-16 object-contain" alt="Reclame Aqui">
                 <img src="seguro certificado.png" class="h-14 object-contain" alt="Seguro">
-                <img src="selos.png" class="h-14 object-contain" alt="Selos">
+                <img src="selos.png" class="h-14 object-contain" alt="Selos Segurança">
             </div>
             <div class="border-t pt-10">
-                <p class="font-black text-navy uppercase tracking-widest text-xs mb-2 italic">GO SPLASH PISCINAS - CATALÃO/GO</p>
-                <p class="opacity-60 text-[10px] font-bold uppercase italic">CNPJ: 50.574.273/0001-18 | Liderança em Piscinas</p>
+                <p class="font-black text-navy uppercase tracking-widest text-xs mb-2">GO SPLASH PISCINAS - CATALÃO/GO</p>
+                <p class="opacity-60 text-[10px] font-bold mb-8 italic uppercase">CNPJ: 50.574.273/0001-18 | Revenda Autorizada Oficial</p>
+                <div class="flex justify-center gap-10 text-navy mb-4">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    <i class="fab fa-facebook text-2xl"></i>
+                    <i class="fab fa-whatsapp text-2xl text-green-500"></i>
+                </div>
             </div>
         </div>
     </footer>
