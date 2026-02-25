@@ -3,68 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go Splash Piscinas | É fácil ser feliz!</title>
+    <title>GO SPLASH PISCINAS | Catalão-GO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; }
+        /* PALETA DE CORES HARMONIZADA COM O LOGOTIPO */
+        :root {
+            --azul-principal: #0077b6; /* Azul do fundo do logo */
+            --azul-claro: #00b4d8;    /* Azul da água no logo */
+            --amarelo-logo: #ffca3a;  /* Amarelo dos guarda-sóis */
+            --coral-logo: #ff595e;    /* Coral dos detalhes */
+        }
+
+        .text-navy { color: var(--azul-principal); }
+        .bg-navy { background-color: var(--azul-principal); }
+        .border-yellow-logo { border-color: var(--amarelo-logo); }
         
-        /* HEADER: Logotipo no canto superior esquerdo */
-        header { 
-            background: #0077b6; 
-            padding: 10px 5%; 
-            display: flex; 
-            align-items: center; 
-            justify-content: flex-start;
+        /* CARROSSEL TOPO HD COM OVERLAY HARMONIZADO */
+        @keyframes slide {
+            0% { background-image: linear-gradient(rgba(0, 119, 182, 0.5), rgba(0, 119, 182, 0.3)), url('fundo8.jpeg'); }
+            33% { background-image: linear-gradient(rgba(0, 119, 182, 0.5), rgba(0, 119, 182, 0.3)), url('fundo0.jpeg'); }
+            66% { background-image: linear-gradient(rgba(0, 119, 182, 0.5), rgba(0, 119, 182, 0.3)), url('fundo3.jpeg'); }
+            100% { background-image: linear-gradient(rgba(0, 119, 182, 0.5), rgba(0, 119, 182, 0.3)), url('fundo8.jpeg'); }
         }
-        .logo-header { height: 60px; width: auto; border-radius: 50%; }
+        .hero-carousel { animation: slide 18s infinite; background-size: cover; background-position: center; transition: 1.5s ease-in-out; }
 
-        /* BANNER PRINCIPAL / CARROSSEL */
-        .hero { 
-            background: #f0f8ff; 
-            padding: 80px 20px; 
-            text-align: center;
-            border-bottom: 5px solid #00b4d8;
-        }
-        .hero h1 { font-size: 3em; color: #0077b6; }
+        #testimonialSlider { display: flex; width: 400%; transition: transform 0.8s ease-in-out; }
+        .testimonial-slide { width: 25%; flex-shrink: 0; }
 
-        /* GRID DE IMAGENS E CONTEÚDO (Onde ficam seus banners antigos) */
-        .content { max-width: 1200px; margin: 40px auto; padding: 20px; text-align: center; }
-        .grid-fotos img { width: 100%; border-radius: 10px; margin-bottom: 20px; }
-
-        /* RODAPÉ: Email de contato próximo ao CNPJ */
-        footer { background: #1a1a1a; color: #fff; padding: 50px 20px; text-align: center; }
-        .email-link { color: #00b4d8; text-decoration: none; font-weight: bold; }
-        .cnpj { font-size: 0.8em; color: #777; margin-top: 20px; display: block; }
+        #mobile-menu { transition: all 0.3s ease-in-out; }
+        .menu-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+        .menu-closed { transform: translateY(-20px); opacity: 0; pointer-events: none; }
     </style>
 </head>
-<body>
+<body class="bg-slate-50 text-gray-800 font-sans">
 
-    <header>
-        <a href="index.html">
-            <img src="Logotipo Agência de Turismo Dourado Minimalista.png" alt="Logo Go Splash" class="logo-header">
-        </a>
+    <nav class="fixed w-full z-[100] bg-white shadow-md border-b-4 border-yellow-logo">
+        <div class="max-w-7xl mx-auto px-4 h-24 flex justify-between items-center">
+            
+            <a href="index.html" class="hover:scale-105 transition">
+                <img src="Logotipo Agência de Turismo Dourado Minimalista.png" alt="Logo Go Splash" class="h-16 md:h-20 w-auto rounded-full border-2 border-[#0077b6]">
+            </a>
+
+            <div class="hidden lg:flex space-x-6 font-bold text-xs uppercase tracking-widest text-navy">
+                <a href="index.html" class="text-sky-500">Início</a>
+                <a href="modelos.html" class="hover:text-sky-500">Piscinas</a>
+                <a href="produtos.html" class="hover:text-sky-500">Produtos</a>
+                <a href="sobre.html" class="hover:text-sky-500">A Empresa</a>
+                <a href="orcamento.html" class="hover:text-sky-500">Orçamento</a>
+            </div>
+
+            <div class="flex items-center gap-2 md:gap-4">
+                <a href="https://wa.me/5534997373282" class="bg-navy text-white px-4 py-3 rounded-full font-bold text-[10px] md:text-xs italic shadow-md border-l-4 border-[#ffca3a]">
+                    (34) 99737-3282
+                </a>
+                <button onclick="toggleMenu()" class="lg:hidden text-navy text-2xl p-2 focus:outline-none">
+                    <i class="fas fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="lg:hidden bg-navy menu-closed absolute w-full left-0 top-24 border-b-8 border-[#ffca3a] shadow-2xl">
+            <div class="flex flex-col p-6 space-y-4 font-black text-white uppercase italic tracking-widest text-center">
+                <a href="index.html" class="py-3 border-b border-white/10 text-[#ffca3a]">Início</a>
+                <a href="modelos.html" class="py-3 border-b border-white/10">Piscinas</a>
+                <a href="produtos.html" class="py-3 border-b border-white/10">Produtos</a>
+                <a href="sobre.html" class="py-3 border-b border-white/10">A Empresa</a>
+                <a href="orcamento.html" class="py-3">Orçamento</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-carousel h-[85vh] flex items-center justify-center text-center text-white px-4 pt-20">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-8xl font-black uppercase italic mb-4 leading-tight drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)]">É fácil ser feliz!</h1>
+            <p class="text-lg md:text-2xl mb-10 italic text-[#ffca3a] font-bold drop-shadow-md">A maior rede de piscinas do mundo em Catalão.</p>
+            <a href="modelos.html" class="bg-[#ffca3a] text-navy px-12 py-5 rounded-full font-black uppercase hover:scale-105 transition inline-block shadow-2xl">Ver Catálogo VIP</a>
+        </div>
     </header>
 
-    <section class="hero">
-        <h1>Transforme seu quintal em um paraíso</h1>
-        <p>É fácil ser feliz!</p>
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12 text-left">
+            <div class="md:w-1/2">
+                <img src="Mergulhe de Cabeça!.jpg" class="rounded-[3rem] shadow-2xl w-full border-4 border-[#0077b6]">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-black text-navy uppercase italic mb-6 leading-tight">Mergulhe nos seus sonhos!</h2>
+                <p class="text-2xl mb-6 italic font-bold text-sky-600">Pague em até 10x SEM JUROS no cartão!</p>
+                <a href="https://wa.me/5534997373282" class="bg-[#25d366] text-white px-10 py-5 rounded-full font-black uppercase inline-block shadow-lg hover:scale-105 transition">Falar no WhatsApp</a>
+            </div>
+        </div>
     </section>
 
-    <div class="content">
-        <div class="grid-fotos">
-            <img src="banner1.jpg" alt="Piscina 1">
+    <section class="py-20 bg-navy">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-[3rem] p-8 md:p-16 shadow-2xl border-t-8 border-[#ffca3a] flex flex-col md:flex-row gap-12 items-center text-left text-gray-800">
+                <div class="md:w-3/5">
+                    <h2 class="text-3xl md:text-5xl font-black text-navy uppercase italic mb-6 leading-tight">Projeto Premium <span class="text-sky-600">Custo Zero</span></h2>
+                    <p class="text-xl mb-8 italic leading-relaxed text-gray-600 font-medium">Consultoria completa com Arquiteto e Engenheiro. Visita técnica gratuita para Catalão!</p>
+                    <a href="https://wa.me/5534997373282" class="bg-navy text-white px-10 py-5 rounded-full font-black uppercase italic shadow-xl inline-block hover:opacity-90 transition">Agendar Consultoria</a>
+                </div>
+                <div class="md:w-2/5">
+                    <img src="fundo2.jpeg" class="rounded-3xl shadow-lg h-72 w-full object-cover border-4 border-slate-100">
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <footer>
-        <h3>Fale Conosco</h3>
-        <p>E-mail: <a href="mailto:contato@gosplash.com.br" class="email-link">contato@gosplash.com.br</a></p>
-        <p>www.gosplash.com.br</p>
-        
-        <hr style="width: 50px; border: 0.5px solid #333; margin: 25px auto;">
-        
-        <p>© 2026 Go Splash Piscinas</p>
-        <span class="cnpj">CNPJ: 00.000.000/0001-00</span>
+    <section class="py-24 bg-slate-50 overflow-hidden text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-black text-navy uppercase italic mb-12 border-l-8 border-[#ffca3a] pl-6 inline-block">O que dizem nossos clientes</h2>
+            <div class="relative max-w-5xl mx-auto overflow-hidden">
+                <div id="testimonialSlider">
+                    <div class="testimonial-slide px-4"><div class="bg-white p-10 rounded-[2rem] shadow-xl border-b-8 border-sky-500 min-h-[300px] flex flex-col justify-center"><p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"O atendimento da Go Splash em Catalão superou todas as expectativas..."</p><h4 class="font-black text-navy uppercase italic tracking-widest text-sm">João Silva — Catalão / GO</h4></div></div>
+                    <div class="testimonial-slide px-4"><div class="bg-white p-10 rounded-[2rem] shadow-xl border-b-8 border-[#ffca3a] min-h-[300px] flex flex-col justify-center"><p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"A piscina de fibra com o sistema iGUi é sensacional..."</p><h4 class="font-black text-navy uppercase italic tracking-widest text-sm">Maria Oliveira — Ouvidor / GO</h4></div></div>
+                    <div class="testimonial-slide px-4"><div class="bg-white p-10 rounded-[2rem] shadow-xl border-b-8 border-sky-500 min-h-[300px] flex flex-col justify-center"><p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"Paguei em 10x sem juros no cartão e a entrega foi pontual..."</p><h4 class="font-black text-navy uppercase italic tracking-widest text-sm">Ricardo Souza — Catalão / GO</h4></div></div>
+                    <div class="testimonial-slide px-4"><div class="bg-white p-10 rounded-[2rem] shadow-xl border-b-8 border-[#ffca3a] min-h-[300px] flex flex-col justify-center"><p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"O arquiteto transformou meu quintal..."</p><h4 class="font-black text-navy uppercase italic tracking-widest text-sm">Carla Mendes — Catalão / GO</h4></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white pt-20 pb-12 border-t text-center">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 mb-16 px-4">
+                <img src="IGUi-piscinas-logo-oficial.png" class="h-8 md:h-10 object-contain">
+                <img src="google selos.png" class="h-12 md:h-16 object-contain">
+                <img src="mercadopago-logo.png" class="h-10 md:h-14 object-contain">
+                <img src="reclamaaqui.png" class="h-12 md:h-16 object-contain">
+                <img src="seguro certificado.png" class="h-10 md:h-14 object-contain">
+                <img src="selos.png" class="h-10 md:h-14 object-contain">
+            </div>
+            <div class="border-t pt-10">
+                <p class="font-black text-navy uppercase tracking-widest text-sm mb-2">
+                    E-mail: <a href="mailto:contato@gosplash.com.br" class="text-sky-600 hover:underline">contato@gosplash.com.br</a>
+                </p>
+                <p class="font-black text-navy uppercase tracking-widest text-xs mb-2">GO SPLASH PISCINAS - CATALÃO/GO</p>
+                <p class="opacity-60 text-[10px] font-bold mb-8 uppercase italic">CNPJ: 50.574.273/0001-18 | Revenda Autorizada</p>
+            </div>
+        </div>
     </footer>
 
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if(menu.classList.contains('menu-closed')) {
+                menu.classList.remove('menu-closed');
+                menu.classList.add('menu-open');
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                menu.classList.remove('menu-open');
+                menu.classList.add('menu-closed');
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        }
+
+        let currentSlide = 0;
+        setInterval(() => {
+            const slider = document.getElementById('testimonialSlider');
+            if(slider) {
+                currentSlide++;
+                if (currentSlide >= 4) currentSlide = 0;
+                slider.style.transform = `translateX(-${currentSlide * 25}%)`;
+            }
+        }, 5000);
+    </script>
 </body>
 </html>
