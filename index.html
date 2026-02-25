@@ -7,30 +7,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* PALETA DE CORES HARMONIZADA COM O LOGOTIPO */
         :root {
-            --azul-principal: #0077b6; /* Azul do fundo do logo */
-            --azul-claro: #00b4d8;    /* Azul da água no logo */
-            --amarelo-logo: #ffca3a;  /* Amarelo dos guarda-sóis */
-            --coral-logo: #ff595e;    /* Coral dos detalhes */
+            --azul-principal: #0077b6; /* Azul do logo */
+            --amarelo-logo: #ffca3a;  /* Amarelo do logo */
         }
 
         .text-navy { color: var(--azul-principal); }
         .bg-navy { background-color: var(--azul-principal); }
-        .border-yellow-logo { border-color: var(--amarelo-logo); }
         
-        /* CARROSSEL TOPO HD COM OVERLAY HARMONIZADO */
+        /* CARROSSEL TOPO HD HARMONIZADO */
         @keyframes slide {
-            0% { background-image: linear-gradient(rgba(0, 119, 182, 0.5), rgba(0, 119, 182, 0.3)), url('fundo8.jpeg'); }
-            33% { background-image: linear-gradient(rgba(0, 119, 182, 0.5), rgba(0, 119, 182, 0.3)), url('fundo0.jpeg'); }
-            66% { background-image: linear-gradient(rgba(0, 119, 182, 0.5), rgba(0, 119, 182, 0.3)), url('fundo3.jpeg'); }
-            100% { background-image: linear-gradient(rgba(0, 119, 182, 0.5), rgba(0, 119, 182, 0.3)), url('fundo8.jpeg'); }
+            0% { background-image: linear-gradient(rgba(0,119,182,0.5), rgba(0,119,182,0.3)), url('fundo8.jpeg'); }
+            33% { background-image: linear-gradient(rgba(0,119,182,0.5), rgba(0,119,182,0.3)), url('fundo0.jpeg'); }
+            66% { background-image: linear-gradient(rgba(0,119,182,0.5), rgba(0,119,182,0.3)), url('fundo3.jpeg'); }
+            100% { background-image: linear-gradient(rgba(0,119,182,0.5), rgba(0,119,182,0.3)), url('fundo8.jpeg'); }
         }
         .hero-carousel { animation: slide 18s infinite; background-size: cover; background-position: center; transition: 1.5s ease-in-out; }
 
+        /* SLIDER DE DEPOIMENTOS */
         #testimonialSlider { display: flex; width: 400%; transition: transform 0.8s ease-in-out; }
         .testimonial-slide { width: 25%; flex-shrink: 0; }
 
+        /* MENU MOBILE */
         #mobile-menu { transition: all 0.3s ease-in-out; }
         .menu-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
         .menu-closed { transform: translateY(-20px); opacity: 0; pointer-events: none; }
@@ -38,11 +36,13 @@
 </head>
 <body class="bg-slate-50 text-gray-800 font-sans">
 
-    <nav class="fixed w-full z-[100] bg-white shadow-md border-b-4 border-yellow-logo">
+    <nav class="fixed w-full z-[100] bg-white shadow-md border-b-4 border-[#ffca3a]">
         <div class="max-w-7xl mx-auto px-4 h-24 flex justify-between items-center">
             
             <a href="index.html" class="hover:scale-105 transition">
-                <img src="Logotipo Agência de Turismo Dourado Minimalista.png" alt="Logo Go Splash" class="h-16 md:h-20 w-auto rounded-full border-2 border-[#0077b6]">
+                <div class="bg-white p-1 rounded-full shadow-[0_0_15px_rgba(0,119,182,0.3)] border border-slate-100">
+                    <img src="Logotipo Agência de Turismo Dourado Minimalista.png" alt="Logo Go Splash" class="h-16 md:h-20 w-auto rounded-full">
+                </div>
             </a>
 
             <div class="hidden lg:flex space-x-6 font-bold text-xs uppercase tracking-widest text-navy">
@@ -115,10 +115,8 @@
             <h2 class="text-3xl md:text-4xl font-black text-navy uppercase italic mb-12 border-l-8 border-[#ffca3a] pl-6 inline-block">O que dizem nossos clientes</h2>
             <div class="relative max-w-5xl mx-auto overflow-hidden">
                 <div id="testimonialSlider">
-                    <div class="testimonial-slide px-4"><div class="bg-white p-10 rounded-[2rem] shadow-xl border-b-8 border-sky-500 min-h-[300px] flex flex-col justify-center"><p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"O atendimento da Go Splash em Catalão superou todas as expectativas..."</p><h4 class="font-black text-navy uppercase italic tracking-widest text-sm">João Silva — Catalão / GO</h4></div></div>
-                    <div class="testimonial-slide px-4"><div class="bg-white p-10 rounded-[2rem] shadow-xl border-b-8 border-[#ffca3a] min-h-[300px] flex flex-col justify-center"><p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"A piscina de fibra com o sistema iGUi é sensacional..."</p><h4 class="font-black text-navy uppercase italic tracking-widest text-sm">Maria Oliveira — Ouvidor / GO</h4></div></div>
-                    <div class="testimonial-slide px-4"><div class="bg-white p-10 rounded-[2rem] shadow-xl border-b-8 border-sky-500 min-h-[300px] flex flex-col justify-center"><p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"Paguei em 10x sem juros no cartão e a entrega foi pontual..."</p><h4 class="font-black text-navy uppercase italic tracking-widest text-sm">Ricardo Souza — Catalão / GO</h4></div></div>
-                    <div class="testimonial-slide px-4"><div class="bg-white p-10 rounded-[2rem] shadow-xl border-b-8 border-[#ffca3a] min-h-[300px] flex flex-col justify-center"><p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"O arquiteto transformou meu quintal..."</p><h4 class="font-black text-navy uppercase italic tracking-widest text-sm">Carla Mendes — Catalão / GO</h4></div></div>
+                    <div class="testimonial-slide px-4"><div class="bg-white p-10 rounded-[2rem] shadow-xl border-b-8 border-sky-500 min-h-[300px] flex flex-col justify-center"><p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"O atendimento da Go Splash em Catalão superou todas as expectativas."</p><h4 class="font-black text-navy uppercase italic tracking-widest text-sm">João Silva — Catalão / GO</h4></div></div>
+                    <div class="testimonial-slide px-4"><div class="bg-white p-10 rounded-[2rem] shadow-xl border-b-8 border-[#ffca3a] min-h-[300px] flex flex-col justify-center"><p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"A piscina de fibra com o sistema iGUi é sensacional."</p><h4 class="font-black text-navy uppercase italic tracking-widest text-sm">Maria Oliveira — Ouvidor / GO</h4></div></div>
                 </div>
             </div>
         </div>
@@ -132,7 +130,6 @@
                 <img src="mercadopago-logo.png" class="h-10 md:h-14 object-contain">
                 <img src="reclamaaqui.png" class="h-12 md:h-16 object-contain">
                 <img src="seguro certificado.png" class="h-10 md:h-14 object-contain">
-                <img src="selos.png" class="h-10 md:h-14 object-contain">
             </div>
             <div class="border-t pt-10">
                 <p class="font-black text-navy uppercase tracking-widest text-sm mb-2">
@@ -164,7 +161,7 @@
             const slider = document.getElementById('testimonialSlider');
             if(slider) {
                 currentSlide++;
-                if (currentSlide >= 4) currentSlide = 0;
+                if (currentSlide >= 2) currentSlide = 0;
                 slider.style.transform = `translateX(-${currentSlide * 25}%)`;
             }
         }, 5000);
