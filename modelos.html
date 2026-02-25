@@ -7,13 +7,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .bg-navy { background-color: #001f3f; }
         .text-navy { color: #001f3f; }
-        .card-piscina { transition: 0.3s; border-radius: 20px; overflow: hidden; background: white; border: 1px solid #eee; }
-        .card-piscina:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+        .bg-navy { background-color: #001f3f; }
+        .modelos-banner { 
+            background: linear-gradient(rgba(0,31,63,0.5), rgba(0,31,63,0.5)), url('fundo7.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-700 font-sans">
+<body class="bg-white text-gray-800 font-sans text-left">
 
     <nav class="fixed w-full z-50 bg-white shadow-md border-b-4 border-[#dfff00]">
         <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
@@ -25,69 +28,63 @@
                 <a href="sobre.html" class="hover:text-blue-500">A Empresa</a>
                 <a href="orcamento.html" class="hover:text-blue-500">Orçamento</a>
             </div>
-            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs italic">
-                (34) 99737-3282
-            </a>
+            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs italic">(34) 99737-3282</a>
         </div>
     </nav>
 
-    <main class="pt-32 pb-20 container mx-auto px-4">
-        <div class="border-l-8 border-[#dfff00] pl-6 mb-12 text-left">
-            <h1 class="text-4xl font-black text-navy uppercase italic">Nossos Modelos</h1>
-            <p class="text-gray-500 italic font-bold">A maior variedade de Catalão e região.</p>
+    <header class="modelos-banner h-[50vh] flex items-center justify-center text-center text-white px-4 pt-20">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-6xl font-black uppercase italic mb-4">Nossos Modelos</h1>
+            <p class="text-xl italic text-yellow-400 font-bold">A maior variedade de fibra e pastilhas da região</p>
+        </div>
+    </header>
+
+    <main class="py-20 container mx-auto px-4">
+        <div class="mb-20 text-left">
+            <h2 class="text-3xl font-black text-navy uppercase italic mb-8 border-l-8 border-blue-600 pl-6">Linha Premium (Pastilhadas)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="relative overflow-hidden rounded-[3rem] shadow-xl group">
+                    <img src="fundo8.jpeg" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-80"></div>
+                    <div class="absolute bottom-8 left-8 text-white">
+                        <h3 class="text-2xl font-black uppercase italic">Linha Italiana</h3>
+                        <p class="text-sm italic opacity-80">Sofisticação com pastilhas de porcelana.</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-[3rem] shadow-xl group text-left">
+                    <img src="fundo3.jpeg" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-80"></div>
+                    <div class="absolute bottom-8 left-8 text-white">
+                        <h3 class="text-2xl font-black uppercase italic text-left">Linha Tropical</h3>
+                        <p class="text-sm italic opacity-80 text-left">Bordas infinitas e design orgânico.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <div class="card-piscina p-6 flex flex-col items-center">
-                <img src="italiana.png" class="w-full h-48 object-contain mb-4">
-                <h2 class="text-xl font-black text-navy uppercase italic text-center">Italiana</h2>
-                <a href="italiana.html" class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Detalhes</a>
-            </div>
-
-            <div class="card-piscina p-6 flex flex-col items-center">
-                <img src="tropical13a.jpg" class="w-full h-48 object-contain mb-4">
-                <h2 class="text-xl font-black text-navy uppercase italic text-center">Tropical</h2>
-                <a href="tropical.html" class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Detalhes</a>
-            </div>
-
-            <div class="card-piscina p-6 flex flex-col items-center">
-                <img src="atalaia-azul.png" class="w-full h-48 object-contain mb-4">
-                <h2 class="text-xl font-black text-navy uppercase italic text-center">Atalaia</h2>
-                <a href="https://wa.me/5534997373282" class="mt-4 bg-green-500 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Orçamento</a>
-            </div>
-
-            <div class="card-piscina p-6 flex flex-col items-center">
-                <img src="cancun-azul.png" class="w-full h-48 object-contain mb-4">
-                <h2 class="text-xl font-black text-navy uppercase italic text-center">Cancun</h2>
-                <a href="https://wa.me/5534997373282" class="mt-4 bg-green-500 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Orçamento</a>
-            </div>
-
-            <div class="card-piscina p-6 flex flex-col items-center">
-                <img src="tortuga_azul-s-pastilhas.png" class="w-full h-48 object-contain mb-4">
-                <h2 class="text-xl font-black text-navy uppercase italic text-center">Tortuga</h2>
-                <a href="https://wa.me/5534997373282" class="mt-4 bg-green-500 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Orçamento</a>
-            </div>
-
-            <div class="card-piscina p-6 flex flex-col items-center">
-                <img src="nassau-azul.png" class="w-full h-48 object-contain mb-4">
-                <h2 class="text-xl font-black text-navy uppercase italic text-center">Nassau</h2>
-                <a href="https://wa.me/5534997373282" class="mt-4 bg-green-500 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Orçamento</a>
-            </div>
-
-            <div class="card-piscina p-6 flex flex-col items-center">
-                <img src="bonaire-branca.png" class="w-full h-48 object-contain mb-4">
-                <h2 class="text-xl font-black text-navy uppercase italic text-center">Bonaire</h2>
-                <a href="https://wa.me/5534997373282" class="mt-4 bg-green-500 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Orçamento</a>
-            </div>
-
-            <div class="card-piscina p-6 flex flex-col items-center">
-                <img src="splash-tradicional-8m-SPA-e-pastilha-porcelana-azul.png" class="w-full h-48 object-contain mb-4">
-                <h2 class="text-xl font-black text-navy uppercase italic text-center">Tradicional</h2>
-                <a href="tradicional.html" class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg font-bold text-xs uppercase italic">Detalhes</a>
-            </div>
-
-        </div>
+        <section class="bg-gray-100 p-12 rounded-[4rem] text-center mb-20 border-t-8 border-yellow-400">
+            <h2 class="text-3xl font-black text-navy uppercase italic mb-6">Não encontrou o que procurava?</h2>
+            <p class="text-lg italic text-gray-600 mb-8">Nossa equipe de arquitetos pode te ajudar a escolher o modelo ideal para o seu terreno.</p>
+            <a href="orcamento.html" class="bg-blue-600 text-white px-10 py-4 rounded-full font-black uppercase italic hover:bg-navy transition shadow-lg inline-block">Solicitar Catálogo PDF</a>
+        </section>
     </main>
+
+    <footer class="bg-white pt-20 pb-12 border-t text-center">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 mb-16 px-4">
+                <img src="IGUi-piscinas-logo-oficial.png" class="h-10 object-contain" alt="iGUi">
+                <img src="google selos.png" class="h-16 object-contain" alt="Google">
+                <img src="mercadopago-logo.png" class="h-14 object-contain" alt="Mercado Pago">
+                <img src="reclamaaqui.png" class="h-16 object-contain" alt="Reclame Aqui">
+                <img src="seguro certificado.png" class="h-14 object-contain" alt="Seguro">
+                <img src="selos.png" class="h-14 object-contain" alt="Selos">
+            </div>
+            <div class="border-t pt-10">
+                <p class="font-black text-navy uppercase tracking-widest text-xs mb-2 italic">GO SPLASH PISCINAS - CATALÃO/GO</p>
+                <p class="opacity-60 text-[10px] font-bold uppercase italic">CNPJ: 50.574.273/0001-18 | Liderança em Piscinas</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
