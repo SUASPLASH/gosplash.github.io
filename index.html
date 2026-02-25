@@ -19,7 +19,7 @@
         }
         .hero-carousel { animation: slide 18s infinite; background-size: cover; background-position: center; transition: 1.5s ease-in-out; }
 
-        /* SLIDER DE DEPOIMENTOS */
+        /* AJUSTE DO SLIDER DE DEPOIMENTOS */
         #testimonialSlider {
             display: flex;
             width: 400%; 
@@ -36,7 +36,7 @@
     <nav class="fixed w-full z-50 bg-white shadow-md border-b-4 border-[#dfff00]">
         <div class="max-w-7xl mx-auto px-4 h-24 flex justify-between items-center">
             
-            <a href="index.html" class="bg-navy px-6 py-3 rounded-2xl shadow-lg border-b-4 border-[#dfff00] transform -skew-x-6 hover:scale-105 transition active:scale-95">
+            <a href="index.html" class="bg-navy px-6 py-3 rounded-2xl shadow-lg border-b-4 border-[#dfff00] transform -skew-x-6 hover:scale-105 transition">
                 <div class="text-2xl md:text-3xl font-black italic uppercase tracking-tighter text-white">
                     GO<span class="text-[#dfff00]">SPLASH</span>
                 </div>
@@ -44,3 +44,117 @@
 
             <div class="hidden md:flex space-x-6 font-bold text-xs uppercase tracking-widest text-navy">
                 <a href="index.html" class="text-blue-500">Início</a>
+                <a href="modelos.html" class="hover:text-blue-500">Piscinas</a>
+                <a href="produtos.html" class="hover:text-blue-500">Produtos</a>
+                <a href="sobre.html" class="hover:text-blue-500">A Empresa</a>
+                <a href="orcamento.html" class="hover:text-blue-500">Orçamento</a>
+            </div>
+
+            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-3 rounded-full font-bold text-[10px] md:text-xs italic shadow-md border-l-4 border-yellow-400">
+                (34) 99737-3282
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero-carousel h-[85vh] flex items-center justify-center text-center text-white px-4 pt-20">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-black uppercase italic mb-4 leading-tight">É fácil ser feliz!</h1>
+            <p class="text-xl md:text-2xl mb-10 italic text-yellow-400 font-bold">A maior rede de piscinas do mundo em Catalão.</p>
+            <a href="modelos.html" class="bg-[#dfff00] text-navy px-12 py-5 rounded-full font-black uppercase hover:scale-105 transition inline-block shadow-2xl">Ver Catálogo VIP</a>
+        </div>
+    </header>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12 text-left">
+            <div class="md:w-1/2">
+                <img src="Mergulhe de Cabeça!.jpg" class="rounded-[3rem] shadow-2xl w-full border-4 border-blue-600" alt="Promoção">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-black text-navy uppercase italic mb-6 leading-tight">Mergulhe nos seus sonhos!</h2>
+                <p class="text-2xl mb-6 italic font-bold text-blue-600">Pague em até 10x SEM JUROS no cartão!</p>
+                <a href="https://wa.me/5534997373282" class="bg-green-500 text-white px-10 py-5 rounded-full font-black uppercase inline-block shadow-lg hover:scale-105 transition">Falar no WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-navy">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-[4rem] p-8 md:p-16 shadow-2xl border-t-8 border-yellow-400 flex flex-col md:flex-row gap-12 items-center text-left text-gray-800">
+                <div class="md:w-3/5">
+                    <h2 class="text-3xl md:text-5xl font-black text-navy uppercase italic mb-6 leading-tight">Projeto Premium <span class="text-blue-600">Custo Zero</span></h2>
+                    <p class="text-xl mb-8 italic leading-relaxed text-gray-600 font-medium">Consultoria completa com Arquiteto e Engenheiro. Visita técnica gratuita para Catalão e região!</p>
+                    <a href="https://wa.me/5534997373282" class="bg-navy text-white px-10 py-5 rounded-full font-black uppercase italic shadow-xl inline-block hover:bg-blue-800 transition">Agendar Consultoria</a>
+                </div>
+                <div class="md:w-2/5">
+                    <img src="fundo2.jpeg" class="rounded-3xl shadow-lg h-72 w-full object-cover border-4 border-gray-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-50 overflow-hidden text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-black text-navy uppercase italic mb-12">O que dizem nossos clientes</h2>
+            <div class="relative max-w-5xl mx-auto overflow-hidden">
+                <div id="testimonialSlider">
+                    <div class="testimonial-slide px-4">
+                        <div class="bg-white p-10 rounded-[3rem] shadow-xl border-b-8 border-blue-500 min-h-[300px] flex flex-col justify-center">
+                            <p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"O atendimento da Go Splash em Catalão superou todas as expectativas. O projeto do engenheiro me deixou seguro!"</p>
+                            <h4 class="font-black text-navy uppercase italic tracking-widest text-sm">João Silva — Catalão / GO</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide px-4">
+                        <div class="bg-white p-10 rounded-[3rem] shadow-xl border-b-8 border-yellow-400 min-h-[300px] flex flex-col justify-center">
+                            <p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"A piscina de fibra com o sistema iGUi é sensacional. Água sempre limpa e as crianças adoram o deck."</p>
+                            <h4 class="font-black text-navy uppercase italic tracking-widest text-sm">Maria Oliveira — Ouvidor / GO</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide px-4">
+                        <div class="bg-white p-10 rounded-[3rem] shadow-xl border-b-8 border-blue-500 min-h-[300px] flex flex-col justify-center">
+                            <p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"Paguei em 10x sem juros no cartão e a entrega foi pontual. Empresa muito séria e organizada."</p>
+                            <h4 class="font-black text-navy uppercase italic tracking-widest text-sm">Ricardo Souza — Catalão / GO</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide px-4">
+                        <div class="bg-white p-10 rounded-[3rem] shadow-xl border-b-8 border-yellow-400 min-h-[300px] flex flex-col justify-center">
+                            <p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"O arquiteto transformou meu quintal. A visita técnica gratuita abriu meus olhos para detalhes incríveis."</p>
+                            <h4 class="font-black text-navy uppercase italic tracking-widest text-sm">Carla Mendes — Catalão / GO</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white pt-20 pb-12 border-t text-center">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 mb-16 px-4">
+                <img src="IGUi-piscinas-logo-oficial.png" class="h-10 object-contain" alt="iGUi">
+                <img src="google selos.png" class="h-16 object-contain" alt="Google">
+                <img src="mercadopago-logo.png" class="h-14 object-contain" alt="Mercado Pago">
+                <img src="reclamaaqui.png" class="h-16 object-contain" alt="Reclame Aqui">
+                <img src="seguro certificado.png" class="h-14 object-contain" alt="Seguro">
+                <img src="selos.png" class="h-14 object-contain" alt="Selos">
+            </div>
+            <div class="border-t pt-10">
+                <p class="font-black text-navy uppercase tracking-widest text-xs mb-2 italic text-gray-600">GO SPLASH PISCINAS - CATALÃO/GO</p>
+                <p class="opacity-60 text-[10px] font-bold mb-8 uppercase italic text-gray-400">CNPJ: 50.574.273/0001-18 | Revenda Autorizada</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        function moveSlider() {
+            const slider = document.getElementById('testimonialSlider');
+            if(slider) {
+                currentSlide++;
+                if (currentSlide >= 4) currentSlide = 0;
+                slider.style.transform = `translateX(-${currentSlide * 25}%)`;
+            }
+        }
+        setInterval(moveSlider, 5000);
+    </script>
+
+</body>
+</html>
