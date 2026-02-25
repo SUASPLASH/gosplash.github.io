@@ -3,58 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go Splash | É fácil ser feliz!</title>
+    <title>Go Splash Piscinas | É fácil ser feliz!</title>
     <style>
-        /* Estilos para um visual moderno e profissional */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: #333; line-height: 1.6; background-color: #fff; }
-        header { background: #f8f9fa; padding: 40px 20px; text-align: center; border-bottom: 3px solid #0077b6; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; }
         
-        /* Ajuste do Logotipo */
-        .logo { max-width: 280px; height: auto; display: block; margin: 0 auto; }
-        
-        .container { max-width: 900px; margin: 0 auto; padding: 60px 20px; text-align: center; }
-        h1 { color: #0077b6; font-size: 2.5em; margin-bottom: 10px; }
-        .slogan { font-size: 1.2em; color: #555; font-style: italic; margin-bottom: 30px; }
-        
-        /* Rodapé e Contato */
-        footer { background: #1a1a1a; color: #ffffff; padding: 50px 20px; text-align: center; margin-top: 50px; }
-        .footer-content h3 { color: #00b4d8; margin-bottom: 20px; }
-        .contact-box { background: #2a2a2a; padding: 20px; border-radius: 8px; display: inline-block; margin-bottom: 25px; }
-        .contact-link { color: #fff; text-decoration: none; font-size: 1.1em; font-weight: bold; }
-        .contact-link:hover { color: #00b4d8; }
-        
-        .cnpj { font-size: 0.85em; color: #888; margin-top: 15px; letter-spacing: 1px; }
-        .copyright { font-size: 0.8em; color: #666; margin-top: 5px; }
+        /* HEADER: Logotipo no canto superior esquerdo */
+        header { 
+            background: #0077b6; 
+            padding: 10px 5%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: flex-start;
+        }
+        .logo-header { height: 60px; width: auto; border-radius: 50%; }
+
+        /* BANNER PRINCIPAL / CARROSSEL */
+        .hero { 
+            background: #f0f8ff; 
+            padding: 80px 20px; 
+            text-align: center;
+            border-bottom: 5px solid #00b4d8;
+        }
+        .hero h1 { font-size: 3em; color: #0077b6; }
+
+        /* GRID DE IMAGENS E CONTEÚDO (Onde ficam seus banners antigos) */
+        .content { max-width: 1200px; margin: 40px auto; padding: 20px; text-align: center; }
+        .grid-fotos img { width: 100%; border-radius: 10px; margin-bottom: 20px; }
+
+        /* RODAPÉ: Email de contato próximo ao CNPJ */
+        footer { background: #1a1a1a; color: #fff; padding: 50px 20px; text-align: center; }
+        .email-link { color: #00b4d8; text-decoration: none; font-weight: bold; }
+        .cnpj { font-size: 0.8em; color: #777; margin-top: 20px; display: block; }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="Logotipo Agência de Turismo Dourado Minimalista.png" alt="Logo Go Splash" class="logo">
+        <a href="index.html">
+            <img src="Logotipo Agência de Turismo Dourado Minimalista.png" alt="Logo Go Splash" class="logo-header">
+        </a>
     </header>
 
-    <div class="container">
-        <h1>Go Splash</h1>
-        <p class="slogan">É fácil ser feliz!</p>
-        <p>Em breve, um novo conceito em lazer e felicidade para você.</p>
+    <section class="hero">
+        <h1>Transforme seu quintal em um paraíso</h1>
+        <p>É fácil ser feliz!</p>
+    </section>
+
+    <div class="content">
+        <div class="grid-fotos">
+            <img src="banner1.jpg" alt="Piscina 1">
+        </div>
     </div>
 
     <footer>
-        <div class="footer-content">
-            <h3>Fale Conosco</h3>
-            
-            <div class="contact-box">
-                <span>E-mail: </span>
-                <a href="mailto:contato@gosplash.com.br" class="contact-link">contato@gosplash.com.br</a>
-            </div>
-
-            <p>www.gosplash.com.br</p>
-            
-            <hr style="width: 100px; border: 0; border-top: 1px solid #444; margin: 20px auto;">
-            
-            <p class="cnpj">CNPJ: 00.000.000/0001-00</p>
-            <p class="copyright">© 2026 Go Splash - Todos os direitos reservados.</p>
-        </div>
+        <h3>Fale Conosco</h3>
+        <p>E-mail: <a href="mailto:contato@gosplash.com.br" class="email-link">contato@gosplash.com.br</a></p>
+        <p>www.gosplash.com.br</p>
+        
+        <hr style="width: 50px; border: 0.5px solid #333; margin: 25px auto;">
+        
+        <p>© 2026 Go Splash Piscinas</p>
+        <span class="cnpj">CNPJ: 00.000.000/0001-00</span>
     </footer>
 
 </body>
