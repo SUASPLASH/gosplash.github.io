@@ -14,82 +14,105 @@
             background-size: cover;
             background-position: center;
         }
+        #mobile-menu { transition: all 0.3s ease-in-out; }
+        .menu-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+        .menu-closed { transform: translateY(-20px); opacity: 0; pointer-events: none; }
     </style>
 </head>
 <body class="bg-white text-gray-800 font-sans text-left">
 
-    <nav class="fixed w-full z-50 bg-white shadow-md border-b-4 border-[#dfff00]">
-        <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
-            <div class="text-3xl font-black text-navy uppercase italic">GO<span class="text-yellow-400">SPLASH</span></div>
-            <div class="hidden md:flex space-x-6 font-bold text-xs uppercase tracking-widest text-navy">
+    <nav class="fixed w-full z-[100] bg-white shadow-md border-b-4 border-[#dfff00]">
+        <div class="max-w-7xl mx-auto px-4 h-24 flex justify-between items-center text-left">
+            
+            <a href="index.html" class="bg-navy px-4 md:px-6 py-3 rounded-2xl shadow-lg border-b-4 border-[#dfff00] transform -skew-x-6 hover:scale-105 transition">
+                <div class="text-xl md:text-3xl font-black italic uppercase tracking-tighter text-white">
+                    GO<span class="text-[#dfff00]">SPLASH</span>
+                </div>
+            </a>
+
+            <div class="hidden lg:flex space-x-6 font-bold text-xs uppercase tracking-widest text-navy">
                 <a href="index.html" class="hover:text-blue-500">Início</a>
                 <a href="modelos.html" class="hover:text-blue-500">Piscinas</a>
-                <a href="produtos.html" class="hover:text-blue-500">Produtos</a>
+                <a href="produtos.html" class="hover:text-blue-500 text-left">Produtos</a>
                 <a href="sobre.html" class="text-blue-500 border-b-2 border-blue-500">A Empresa</a>
                 <a href="orcamento.html" class="hover:text-blue-500">Orçamento</a>
             </div>
-            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs italic">
-                (34) 99737-3282
-            </a>
+
+            <div class="flex items-center gap-2">
+                <a href="https://wa.me/5534997373282" class="bg-navy text-white px-4 py-3 rounded-full font-bold text-[10px] md:text-xs italic shadow-md border-l-4 border-yellow-400">
+                    (34) 99737-3282
+                </a>
+                <button onclick="toggleMenu()" class="lg:hidden text-navy text-2xl p-2 focus:outline-none">
+                    <i class="fas fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="lg:hidden bg-navy menu-closed absolute w-full left-0 top-24 border-b-8 border-[#dfff00] shadow-2xl">
+            <div class="flex flex-col p-6 space-y-4 font-black text-white uppercase italic tracking-widest text-center">
+                <a href="index.html" class="py-3 border-b border-white/10">Início</a>
+                <a href="modelos.html" class="py-3 border-b border-white/10">Piscinas</a>
+                <a href="produtos.html" class="py-3 border-b border-white/10">Produtos</a>
+                <a href="sobre.html" class="py-3 border-b border-white/10 text-yellow-400 text-left">A Empresa</a>
+                <a href="orcamento.html" class="py-3 text-left">Orçamento</a>
+            </div>
         </div>
     </nav>
 
-    <header class="about-banner h-[60vh] flex items-center justify-center text-center text-white px-4 pt-20">
-        <div class="max-w-4xl">
-            <h1 class="text-5xl md:text-6xl font-black uppercase italic mb-4">Nossa História</h1>
-            <p class="text-xl italic text-yellow-400 font-bold tracking-widest">Realizando sonhos em Catalão e Região</p>
+    <header class="about-banner h-[50vh] flex items-center justify-center text-center text-white px-4 pt-20">
+        <div class="max-w-4xl text-left">
+            <h1 class="text-5xl md:text-6xl font-black uppercase italic mb-4">Nossa Empresa</h1>
+            <p class="text-xl italic text-yellow-400 font-bold uppercase tracking-widest">Compromisso com o lazer da sua família</p>
         </div>
     </header>
 
     <main class="py-20 container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24 text-left">
             <div>
                 <h2 class="text-4xl font-black text-navy uppercase italic mb-8 border-l-8 border-[#dfff00] pl-6">Quem Somos</h2>
                 <p class="text-lg mb-6 italic leading-relaxed text-gray-600">
-                    A <strong>GO SPLASH PISCINAS</strong> nasceu em Catalão/GO com o propósito de transformar quintais em verdadeiros refúgios de lazer. 
-                    Como revenda oficial, trazemos o que há de mais moderno em tecnologia de piscinas de fibra no mundo.
+                    A <strong>GO SPLASH PISCINAS</strong> é a revenda autorizada oficial de Catalão e região, trazendo toda a tecnologia e garantia da maior rede de piscinas do mundo.
                 </p>
                 <p class="text-lg mb-8 italic leading-relaxed text-gray-600">
-                    Trabalhamos com o compromisso de oferecer não apenas um produto, mas uma experiência completa, desde o projeto personalizado com nossa equipe técnica até o primeiro mergulho da sua família.
+                    Nosso diferencial está no atendimento técnico especializado. Aqui, o seu projeto é acompanhado por arquitetos e engenheiros, garantindo que o seu sonho seja realizado com perfeição e segurança.
                 </p>
-                <div class="bg-gray-100 p-6 rounded-2xl border-l-4 border-blue-600">
-                    <p class="font-black text-navy uppercase italic tracking-tighter text-2xl">É FÁCIL SER FELIZ!</p>
-                </div>
             </div>
             <div>
                 <img src="fundo1.jpeg" class="rounded-[3rem] shadow-2xl border-4 border-white" alt="Lazer Go Splash">
             </div>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-10 rounded-[3rem] shadow-xl text-center border-b-8 border-blue-500">
-                <i class="fas fa-certificate text-4xl text-blue-600 mb-6"></i>
-                <h3 class="font-black text-navy uppercase italic mb-4">Qualidade iGUi</h3>
-                <p class="text-sm italic text-gray-500">Garantia estrutural do maior fabricante de piscinas de fibra do mundo.</p>
-            </div>
-            <div class="bg-white p-10 rounded-[3rem] shadow-xl text-center border-b-8 border-yellow-400">
-                <i class="fas fa-tools text-4xl text-blue-600 mb-6"></i>
-                <h3 class="font-black text-navy uppercase italic mb-4">Instalação Ágil</h3>
-                <p class="text-sm italic text-gray-500">Equipe própria e especializada para garantir uma obra limpa, rápida e segura.</p>
-            </div>
-            <div class="bg-white p-10 rounded-[3rem] shadow-xl text-center border-b-8 border-blue-500">
-                <i class="fas fa-map-marker-alt text-4xl text-blue-600 mb-6"></i>
-                <h3 class="font-black text-navy uppercase italic mb-4">Presença Local</h3>
-                <p class="text-sm italic text-gray-500">Loja oficial em Catalão para oferecer o melhor pós-venda da região.</p>
-            </div>
-        </div>
     </main>
 
-    <footer class="bg-white pt-20 pb-12 border-t text-center">
+    <footer class="bg-white pt-20 pb-12 border-t text-center text-gray-800">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 mb-16 px-4">
-                <img src="IGUi-piscinas-logo-oficial.png" class="h-10 object-contain" alt="iGUi">
-                <img src="google selos.png" class="h-16 object-contain" alt="Google">
-                <img src="mercadopago-logo.png" class="h-14 object-contain" alt="Mercado Pago">
-                <img src="reclamaaqui.png" class="h-16 object-contain" alt="Reclame Aqui">
-                <img src="seguro certificado.png" class="h-14 object-contain" alt="Seguro">
-                <img src="selos.png" class="h-14 object-contain" alt="Selos">
+                <img src="IGUi-piscinas-logo-oficial.png" class="h-10 object-contain">
+                <img src="google selos.png" class="h-16 object-contain">
+                <img src="mercadopago-logo.png" class="h-14 object-contain">
+                <img src="reclamaaqui.png" class="h-16 object-contain">
+                <img src="selos.png" class="h-14 object-contain">
             </div>
             <div class="border-t pt-10">
                 <p class="font-black text-navy uppercase tracking-widest text-xs mb-2">GO SPLASH PISCINAS - CATALÃO/GO</p>
-                <p class="opacity-60 text-[10px] font-bold mb-8 uppercase italic">CN
+                <p class="opacity-60 text-[10px] font-bold mb-8 uppercase italic">CNPJ: 50.574.273/0001-18 | É FÁCIL SER FELIZ!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if(menu.classList.contains('menu-closed')) {
+                menu.classList.remove('menu-closed');
+                menu.classList.add('menu-open');
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                menu.classList.remove('menu-open');
+                menu.classList.add('menu-closed');
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        }
+    </script>
+</body>
+</html>
