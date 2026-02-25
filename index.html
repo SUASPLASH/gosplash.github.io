@@ -3,33 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GO SPLASH PISCINAS | Catalão e Região</title>
+    <title>GO SPLASH PISCINAS | Catalão-GO</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .text-navy { color: #001f3f; }
+        .bg-navy { background-color: #001f3f; }
+        .hero-banner { 
+            /* Aqui usamos a sua foto real de instalação */
+            background: linear-gradient(rgba(0,31,63,0.6), rgba(0,31,63,0.6)), url('italiana11a.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-<body class="bg-white">
+<body class="bg-white text-gray-800 font-sans">
+
     <nav class="fixed w-full z-50 bg-white shadow-md border-b-4 border-[#dfff00]">
         <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
-            <div class="text-3xl font-black text-[#001f3f] uppercase italic">GO<span class="text-yellow-400">SPLASH</span></div>
-            <div class="hidden md:flex space-x-6 font-bold text-xs uppercase tracking-widest text-[#001f3f]">
+            <div class="text-3xl font-black text-navy uppercase italic">GO<span class="text-yellow-400">SPLASH</span></div>
+            <div class="hidden md:flex space-x-6 font-bold text-xs uppercase tracking-widest text-navy">
                 <a href="index.html" class="text-blue-500">Início</a>
                 <a href="modelos.html" class="hover:text-blue-500">Piscinas</a>
                 <a href="produtos.html" class="hover:text-blue-500">Produtos</a>
                 <a href="sobre.html" class="hover:text-blue-500">A Empresa</a>
                 <a href="orcamento.html" class="hover:text-blue-500">Orçamento</a>
             </div>
-            <a href="https://wa.me/5534997373282" class="bg-[#001f3f] text-white px-5 py-2 rounded-full font-bold text-xs">(34) 99737-3282</a>
+            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs italic">
+                (34) 99737-3282
+            </a>
         </div>
     </nav>
 
-    <header class="pt-20">
-        <div class="bg-[#001f3f] h-[500px] flex items-center justify-center text-center text-white px-4">
-            <div>
-                <h1 class="text-4xl md:text-6xl font-black uppercase italic mb-4">GO SPLASH</h1>
-                <p class="text-xl md:text-2xl mb-8 italic text-yellow-300 font-bold">"O mergulho dos seus sonhos!"</p>
-                <a href="https://wa.me/5534997373282" class="bg-[#dfff00] text-[#001f3f] px-10 py-4 rounded-xl font-black uppercase shadow-2xl hover:scale-105 transition inline-block">Falar com Consultor</a>
+    <header class="hero-banner h-[85vh] flex items-center justify-center text-center text-white px-4 pt-20">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-black uppercase italic mb-4 leading-tight">É fácil ser feliz!</h1>
+            <p class="text-xl md:text-2xl mb-8 italic text-yellow-400 font-bold">A maior rede de piscinas do mundo, agora em Catalão.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="modelos.html" class="bg-[#dfff00] text-navy px-10 py-4 rounded-full font-black uppercase hover:scale-105 transition">Conhecer Piscinas</a>
+                <a href="https://wa.me/5534997373282" class="bg-white text-navy px-10 py-4 rounded-full font-black uppercase hover:scale-105 transition border-2 border-white">Falar no Whats</a>
             </div>
         </div>
     </header>
+
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="text-center p-6">
+                <i class="fa fa-swimming-pool text-4xl text-blue-500 mb-4"></i>
+                <h3 class="font-black text-navy uppercase italic mb-2">Instalação Rápida</h3>
+                <p class="text-sm italic">Sua piscina pronta em tempo recorde com garantia iGUi/Splash.</p>
+            </div>
+            <div class="text-center p-6">
+                <i class="fa fa-shield-alt text-4xl text-blue-500 mb-4"></i>
+                <h3 class="font-black text-navy uppercase italic mb-2">15 Anos de Garantia</h3>
+                <p class="text-sm italic">Segurança e tranquilidade para o investimento da sua família.</p>
+            </div>
+            <div class="text-center p-6">
+                <i class="fa fa-tint text-4xl text-blue-500 mb-4"></i>
+                <h3 class="font-black text-navy uppercase italic mb-2">Tecnologia Solo</h3>
+                <p class="text-sm italic">Água pura e cristalina sem o cheiro forte de cloro.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy text-white py-12 text-center text-xs uppercase tracking-widest italic opacity-90 border-t-4 border-yellow-400">
+        © 2026 GO SPLASH PISCINAS - CATALÃO/GO
+    </footer>
+
 </body>
 </html>
