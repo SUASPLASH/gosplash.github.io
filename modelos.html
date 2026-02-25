@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo Completo | GO SPLASH</title>
+    <title>Modelos iGUi & Splash | GO SPLASH</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .text-navy { color: #001f3f; }
         .bg-navy { background-color: #001f3f; }
         .modelos-banner { 
-            background: linear-gradient(rgba(0,31,63,0.6), rgba(0,31,63,0.6)), url('fundo7.jpeg');
-            background-size: cover;
-            background-position: center;
+            background: linear-gradient(rgba(0,31,63,0.7), rgba(0,31,63,0.7)), url('fundo7.jpeg');
+            background-size: cover; background-position: center;
         }
-        .table-row:nth-child(even) { background-color: #f8fafc; }
+        .pool-card { transition: all 0.3s ease; border: 1px solid #e5e7eb; height: 100%; display: flex; flex-direction: column; }
+        .pool-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); border-color: #dfff00; }
     </style>
 </head>
-<body class="bg-white text-gray-800 font-sans text-left">
+<body class="bg-gray-50 text-gray-800 font-sans text-left">
 
     <nav class="fixed w-full z-50 bg-white shadow-md border-b-4 border-[#dfff00]">
         <div class="max-w-7xl mx-auto px-4 h-24 flex justify-between items-center">
@@ -33,112 +33,147 @@
                 <a href="sobre.html" class="hover:text-blue-500">A Empresa</a>
                 <a href="orcamento.html" class="hover:text-blue-500">Orçamento</a>
             </div>
-            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-6 py-3 rounded-full font-bold text-xs italic shadow-md border-l-4 border-yellow-400">
-                (34) 99737-3282
-            </a>
+            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-6 py-3 rounded-full font-bold text-xs italic shadow-md border-l-4 border-yellow-400">(34) 99737-3282</a>
         </div>
     </nav>
 
     <header class="modelos-banner h-[40vh] flex items-center justify-center text-center text-white px-4 pt-20">
         <div class="max-w-4xl">
-            <h1 class="text-5xl md:text-6xl font-black uppercase italic mb-2">Linha Completa</h1>
-            <p class="text-lg italic text-yellow-400 font-bold uppercase">Encontre o modelo ideal para seu espaço</p>
+            <h1 class="text-5xl md:text-6xl font-black uppercase italic mb-4">Escolha o seu Modelo</h1>
+            <p class="text-xl italic text-yellow-400 font-bold uppercase tracking-widest">As melhores artes técnicas e dimensões para o seu lazer</p>
         </div>
     </header>
 
-    <main class="py-16 container mx-auto px-4">
+    <main class="py-20 container mx-auto px-4">
         
-        <section class="mb-20">
-            <h2 class="text-3xl font-black text-navy uppercase italic mb-8 border-l-8 border-blue-600 pl-4">Linha Italiana (Pastilhada)</h2>
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <img src="fundo8.jpeg" class="rounded-[2rem] shadow-xl h-64 w-full object-cover">
-                <div class="overflow-hidden rounded-xl border border-gray-200">
-                    <table class="w-full text-sm text-left">
-                        <thead class="bg-gray-100 text-navy uppercase text-xs font-bold">
-                            <tr><th class="px-4 py-3">Modelo</th><th class="px-4 py-3">Dimensões (m)</th><th class="px-4 py-3">Preço</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr class="table-row"><td class="px-4 py-3 font-bold">Italiana 500</td><td class="px-4 py-3">5.00 x 2.50 x 1.40</td><td class="px-4 py-3 font-black text-blue-600">R$ 28.900</td></tr>
-                            <tr class="table-row"><td class="px-4 py-3 font-bold">Italiana 700</td><td class="px-4 py-3">7.00 x 3.00 x 1.40</td><td class="px-4 py-3 font-black text-blue-600">R$ 39.500</td></tr>
-                            <tr class="table-row"><td class="px-4 py-3 font-bold">Italiana 900</td><td class="px-4 py-3">9.00 x 3.50 x 1.40</td><td class="px-4 py-3 font-black text-blue-600">R$ 54.800</td></tr>
-                        </tbody>
-                    </table>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="pool-card bg-white rounded-[2.5rem] overflow-hidden">
+                <div class="bg-gray-100 p-6 flex items-center justify-center h-64">
+                    <img src="italiana-8m-azul.png" class="max-h-full object-contain" alt="Piscina Italiana">
+                </div>
+                <div class="p-8 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-black text-navy uppercase italic mb-2">Linha Italiana</h3>
+                    <p class="text-gray-500 text-sm italic mb-6">A combinação perfeita entre pastilhas e fibra iGUi.</p>
+                    <div class="text-sm space-y-2 mb-8">
+                        <p class="flex justify-between border-b pb-1"><strong>Tamanho:</strong> <span class="italic text-blue-600">8.00 x 4.00 x 1.40m</span></p>
+                        <p class="flex justify-between border-b pb-1"><strong>Estilo:</strong> <span class="italic text-blue-600">Pastilhada VIP</span></p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-3xl font-black text-navy mb-6">R$ 47.400,00</p>
+                        <a href="https://wa.me/5534997373282" class="block text-center bg-blue-600 text-white py-4 rounded-2xl font-bold uppercase italic hover:bg-navy transition shadow-md">Consultar Desconto</a>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section class="mb-20">
-            <h2 class="text-3xl font-black text-navy uppercase italic mb-8 border-l-8 border-yellow-400 pl-4">Linha Tradicional</h2>
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div class="overflow-hidden rounded-xl border border-gray-200 order-2 md:order-1">
-                    <table class="w-full text-sm text-left">
-                        <thead class="bg-gray-100 text-navy uppercase text-xs font-bold">
-                            <tr><th class="px-4 py-3">Modelo</th><th class="px-4 py-3">Dimensões (m)</th><th class="px-4 py-3">Preço</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr class="table-row"><td class="px-4 py-3 font-bold">Tradicional 500</td><td class="px-4 py-3">5.00 x 2.40 x 1.40</td><td class="px-4 py-3 font-black text-blue-600">R$ 22.400</td></tr>
-                            <tr class="table-row"><td class="px-4 py-3 font-bold">Tradicional 700</td><td class="px-4 py-3">7.00 x 3.00 x 1.40</td><td class="px-4 py-3 font-black text-blue-600">R$ 31.800</td></tr>
-                            <tr class="table-row"><td class="px-4 py-3 font-bold">Tradicional 800</td><td class="px-4 py-3">8.00 x 4.00 x 1.40</td><td class="px-4 py-3 font-black text-blue-600">R$ 38.600</td></tr>
-                        </tbody>
-                    </table>
+            <div class="pool-card bg-white rounded-[2.5rem] overflow-hidden">
+                <div class="bg-gray-100 p-6 flex items-center justify-center h-64">
+                    <img src="nassau-azul.png" class="max-h-full object-contain" alt="Piscina Nassau">
                 </div>
-                <img src="fundo0.jpeg" class="rounded-[2rem] shadow-xl h-64 w-full object-cover order-1 md:order-2">
-            </div>
-        </section>
-
-        <section class="mb-20">
-            <h2 class="text-3xl font-black text-navy uppercase italic mb-8 border-l-8 border-blue-600 pl-4">Linha Farol da Barra</h2>
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <img src="fundo4.jpeg" class="rounded-[2rem] shadow-xl h-64 w-full object-cover">
-                <div class="overflow-hidden rounded-xl border border-gray-200">
-                    <table class="w-full text-sm text-left">
-                        <thead class="bg-gray-100 text-navy uppercase text-xs font-bold">
-                            <tr><th class="px-4 py-3">Modelo</th><th class="px-4 py-3">Dimensões (m)</th><th class="px-4 py-3">Preço</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr class="table-row"><td class="px-4 py-3 font-bold">Farol 400</td><td class="px-4 py-3">4.00 x 2.00 x 1.20</td><td class="px-4 py-3 font-black text-blue-600">R$ 15.200</td></tr>
-                            <tr class="table-row"><td class="px-4 py-3 font-bold">Farol 600</td><td class="px-4 py-3">6.00 x 3.00 x 1.40</td><td class="px-4 py-3 font-black text-blue-600">R$ 24.900</td></tr>
-                        </tbody>
-                    </table>
+                <div class="p-8 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-black text-navy uppercase italic mb-2">Nassau</h3>
+                    <p class="text-gray-500 text-sm italic mb-6">Modelo moderno com prainha lateral e escadas integradas.</p>
+                    <div class="text-sm space-y-2 mb-8">
+                        <p class="flex justify-between border-b pb-1"><strong>Tamanho:</strong> <span class="italic text-blue-600">6.00 x 3.00 x 1.40m</span></p>
+                        <p class="flex justify-between border-b pb-1"><strong>Estilo:</strong> <span class="italic text-blue-600">Design Orgânico</span></p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-3xl font-black text-navy mb-6">R$ 28.600,00</p>
+                        <a href="https://wa.me/5534997373282" class="block text-center bg-blue-600 text-white py-4 rounded-2xl font-bold uppercase italic hover:bg-navy transition shadow-md">Eu Quero Esta</a>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section class="mb-20">
-            <h2 class="text-3xl font-black text-navy uppercase italic mb-8 border-l-8 border-yellow-400 pl-4">Spas & Hidromassagem</h2>
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div class="overflow-hidden rounded-xl border border-gray-200 order-2 md:order-1">
-                    <table class="w-full text-sm text-left">
-                        <thead class="bg-gray-100 text-navy uppercase text-xs font-bold">
-                            <tr><th class="px-4 py-3">Modelo</th><th class="px-4 py-3">Dimensões (m)</th><th class="px-4 py-3">Preço</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr class="table-row"><td class="px-4 py-3 font-bold">Spa Cancun</td><td class="px-4 py-3">2.20 x 2.20 x 0.90</td><td class="px-4 py-3 font-black text-blue-600">R$ 18.600</td></tr>
-                            <tr class="table-row"><td class="px-4 py-3 font-bold">Spa Tortuga</td><td class="px-4 py-3">3.00 x 2.20 x 1.00</td><td class="px-4 py-3 font-black text-blue-600">R$ 23.400</td></tr>
-                        </tbody>
-                    </table>
+            <div class="pool-card bg-white rounded-[2.5rem] overflow-hidden">
+                <div class="bg-gray-100 p-6 flex items-center justify-center h-64">
+                    <img src="splash-tradicional-8m-SPA-e-pastilha-porcelana-azul.png" class="max-h-full object-contain" alt="Tradicional com SPA">
                 </div>
-                <img src="fundo5.jpeg" class="rounded-[2rem] shadow-xl h-64 w-full object-cover order-1 md:order-2">
+                <div class="p-8 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-black text-navy uppercase italic mb-2">Tradicional + SPA</h3>
+                    <p class="text-gray-500 text-sm italic mb-6">A experiência completa de lazer com hidromassagem acoplada.</p>
+                    <div class="text-sm space-y-2 mb-8">
+                        <p class="flex justify-between border-b pb-1"><strong>Tamanho:</strong> <span class="italic text-blue-600">8.00 x 4.00 x 1.40m</span></p>
+                        <p class="flex justify-between border-b pb-1"><strong>Extra:</strong> <span class="italic text-blue-600">SPA com Hidro</span></p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-3xl font-black text-navy mb-6">R$ 52.800,00</p>
+                        <a href="https://wa.me/5534997373282" class="block text-center bg-blue-600 text-white py-4 rounded-2xl font-bold uppercase italic hover:bg-navy transition shadow-md">Ver Disponibilidade</a>
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <div class="bg-navy text-white p-8 rounded-3xl text-center shadow-2xl">
-            <h3 class="text-2xl font-black uppercase italic mb-4">Gostou de algum modelo?</h3>
-            <p class="mb-6 opacity-80 italic">Preços válidos para Catalão e região. Cobrimos orçamentos mediante comprovação!</p>
-            <a href="https://wa.me/5534997373282" class="bg-[#dfff00] text-navy px-10 py-4 rounded-full font-black uppercase shadow-lg inline-block">Consultar Desconto no Zap</a>
+            <div class="pool-card bg-white rounded-[2.5rem] overflow-hidden">
+                <div class="bg-gray-100 p-6 flex items-center justify-center h-64">
+                    <img src="tortuga_azul-s-pastilhas.png" class="max-h-full object-contain" alt="Piscina Tortuga">
+                </div>
+                <div class="p-8 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-black text-navy uppercase italic mb-2">Tortuga</h3>
+                    <p class="text-gray-500 text-sm italic mb-6">Modelo compacto com amplo espaço interno livre.</p>
+                    <div class="text-sm space-y-2 mb-8">
+                        <p class="flex justify-between border-b pb-1"><strong>Tamanho:</strong> <span class="italic text-blue-600">5.00 x 2.50 x 1.40m</span></p>
+                        <p class="flex justify-between border-b pb-1"><strong>Vantagem:</strong> <span class="italic text-blue-600">Fácil Limpeza</span></p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-3xl font-black text-navy mb-6">R$ 21.400,00</p>
+                        <a href="https://wa.me/5534997373282" class="block text-center bg-blue-600 text-white py-4 rounded-2xl font-bold uppercase italic hover:bg-navy transition shadow-md">Orçamento Rápido</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pool-card bg-white rounded-[2.5rem] overflow-hidden">
+                <div class="bg-gray-100 p-6 flex items-center justify-center h-64">
+                    <img src="bonaire-branca.png" class="max-h-full object-contain" alt="Piscina Bonaire">
+                </div>
+                <div class="p-8 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-black text-navy uppercase italic mb-2">Bonaire</h3>
+                    <p class="text-gray-500 text-sm italic mb-6">Beleza minimalista na cor branca para destacar o azul da água.</p>
+                    <div class="text-sm space-y-2 mb-8">
+                        <p class="flex justify-between border-b pb-1"><strong>Tamanho:</strong> <span class="italic text-blue-600">6.00 x 3.00 x 1.40m</span></p>
+                        <p class="flex justify-between border-b pb-1"><strong>Destaque:</strong> <span class="italic text-blue-600">Acabamento White</span></p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-3xl font-black text-navy mb-6">R$ 28.900,00</p>
+                        <a href="https://wa.me/5534997373282" class="block text-center bg-blue-600 text-white py-4 rounded-2xl font-bold uppercase italic hover:bg-navy transition shadow-md">Consultar Prazos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pool-card bg-white rounded-[2.5rem] overflow-hidden">
+                <div class="bg-gray-100 p-6 flex items-center justify-center h-64">
+                    <img src="cancun-azul.png" class="max-h-full object-contain" alt="Piscina Cancun">
+                </div>
+                <div class="p-8 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-black text-navy uppercase italic mb-2">Cancun</h3>
+                    <p class="text-gray-500 text-sm italic mb-6">A compacta de luxo para quintais modernos em Catalão.</p>
+                    <div class="text-sm space-y-2 mb-8">
+                        <p class="flex justify-between border-b pb-1"><strong>Tamanho:</strong> <span class="italic text-blue-600">3.00 x 2.00 x 1.00m</span></p>
+                        <p class="flex justify-between border-b pb-1"><strong>Ideal para:</strong> <span class="italic text-blue-600">Áreas Pequenas</span></p>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-3xl font-black text-navy mb-6">R$ 13.800,00</p>
+                        <a href="https://wa.me/5534997373282" class="block text-center bg-blue-600 text-white py-4 rounded-2xl font-bold uppercase italic hover:bg-navy transition shadow-md">Quero Mais Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </main>
 
-    <footer class="bg-white py-12 border-t text-center">
+    <footer class="bg-white pt-20 pb-12 border-t text-center text-gray-800">
         <div class="container mx-auto px-4">
-            <div class="flex flex-wrap justify-center gap-8 mb-10">
-                <img src="IGUi-piscinas-logo-oficial.png" class="h-8 object-contain">
-                <img src="google selos.png" class="h-12 object-contain">
-                <img src="reclamaaqui.png" class="h-12 object-contain">
-                <img src="selos.png" class="h-12 object-contain">
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 mb-16 px-4">
+                <img src="IGUi-piscinas-logo-oficial.png" class="h-10 object-contain" alt="iGUi">
+                <img src="google selos.png" class="h-16 object-contain" alt="Google">
+                <img src="mercadopago-logo.png" class="h-14 object-contain" alt="Mercado Pago">
+                <img src="reclamaaqui.png" class="h-16 object-contain" alt="Reclame Aqui">
+                <img src="seguro certificado.png" class="h-14 object-contain" alt="Seguro">
+                <img src="selos.png" class="h-14 object-contain" alt="Selos Segurança">
             </div>
-            <p class="font-bold text-navy text-[10px] uppercase italic">CNPJ: 50.574.273/0001-18 | GO SPLASH CATALÃO</p>
+            <div class="border-t pt-10">
+                <p class="font-black text-navy uppercase tracking-widest text-xs mb-2 italic">GO SPLASH PISCINAS - CATALÃO/GO</p>
+                <p class="opacity-60 text-[10px] font-bold mb-8 uppercase italic">CNPJ: 50.574.273/0001-18 | É FÁCIL SER FELIZ!</p>
+            </div>
         </div>
     </footer>
 
