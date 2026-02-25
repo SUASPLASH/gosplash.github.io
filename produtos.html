@@ -9,62 +9,95 @@
     <style>
         .text-navy { color: #001f3f; }
         .bg-navy { background-color: #001f3f; }
-        .card-produto { transition: 0.3s; border-radius: 25px; background: white; border: 1px solid #f1f1f1; }
-        .card-produto:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
+        .produtos-banner { 
+            background: linear-gradient(rgba(0,31,63,0.6), rgba(0,31,63,0.6)), url('fundo1.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-700 font-sans">
+<body class="bg-white text-gray-800 font-sans text-left">
 
     <nav class="fixed w-full z-50 bg-white shadow-md border-b-4 border-[#dfff00]">
-        <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center text-left">
-            <div class="text-3xl font-black text-navy uppercase italic text-left text-left">GO<span class="text-yellow-400">SPLASH</span></div>
-            <div class="hidden md:flex space-x-6 font-bold text-xs uppercase tracking-widest text-navy text-left">
+        <div class="max-w-7xl mx-auto px-4 h-24 flex justify-between items-center text-left">
+            <a href="index.html" class="bg-navy px-6 py-3 rounded-2xl shadow-lg border-b-4 border-[#dfff00] transform -skew-x-6 hover:scale-105 transition">
+                <div class="text-2xl md:text-3xl font-black italic uppercase tracking-tighter text-white">
+                    GO<span class="text-[#dfff00]">SPLASH</span>
+                </div>
+            </a>
+            <div class="hidden md:flex space-x-6 font-bold text-xs uppercase tracking-widest text-navy">
                 <a href="index.html" class="hover:text-blue-500">Início</a>
                 <a href="modelos.html" class="hover:text-blue-500">Piscinas</a>
                 <a href="produtos.html" class="text-blue-500 border-b-2 border-blue-500">Produtos</a>
                 <a href="sobre.html" class="hover:text-blue-500">A Empresa</a>
                 <a href="orcamento.html" class="hover:text-blue-500">Orçamento</a>
             </div>
-            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs">
+            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-6 py-3 rounded-full font-bold text-xs italic shadow-md border-l-4 border-yellow-400">
                 (34) 99737-3282
             </a>
         </div>
     </nav>
 
-    <main class="pt-32 pb-20 container mx-auto px-4">
-        <div class="border-l-8 border-[#dfff00] pl-6 mb-12 text-left">
-            <h1 class="text-4xl font-black text-navy uppercase italic">Acessórios e Tecnologia</h1>
-            <p class="text-gray-500 italic font-bold">Inovação para o seu lazer em Catalão e região.</p>
+    <header class="produtos-banner h-[50vh] flex items-center justify-center text-center text-white px-4 pt-20">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-black uppercase italic mb-4 leading-tight">Produtos e Lazer</h1>
+            <p class="text-xl italic text-yellow-400 font-bold uppercase tracking-widest text-left">Tecnologia e Performance para sua Piscina</p>
         </div>
+    </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <main class="py-20 container mx-auto px-4">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
             
-            <div class="card-produto p-8 text-center flex flex-col items-center">
-                <img src="aquecedor.png" class="w-full h-48 object-contain mb-6" alt="Aquecimento">
-                <h3 class="text-xl font-black text-navy uppercase italic mb-2">Aquecimento Kelvin</h3>
-                <p class="text-sm italic text-gray-400 mb-6 italic">Piscina quente com economia.</p>
-                <a href="aquecimento.html" class="bg-blue-600 text-white px-8 py-3 rounded-xl font-bold uppercase text-xs">Saiba Mais</a>
+            <div class="bg-white rounded-[3rem] shadow-xl overflow-hidden border-b-8 border-blue-500 group">
+                <div class="h-64 overflow-hidden"><img src="fundo5.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
+                <div class="p-8">
+                    <h3 class="text-xl font-black text-navy uppercase italic mb-2">Sistema Solo iGUi</h3>
+                    <p class="text-sm italic text-gray-500 mb-6">Tratamento sem cloro que deixa a água cristalina e suave.</p>
+                    <p class="text-2xl font-black text-blue-600 mb-6">R$ 4.200,00</p>
+                    <a href="https://wa.me/5534997373282" class="block text-center bg-navy text-white py-3 rounded-full font-bold uppercase italic text-xs">Comprar Agora</a>
+                </div>
             </div>
 
-            <div class="card-produto p-8 text-center flex flex-col items-center">
-                <img src="clorador igui.jpg" class="w-full h-48 object-contain mb-6" alt="Clorador iGUi">
-                <h3 class="text-xl font-black text-navy uppercase italic mb-2">Tratamento Solo</h3>
-                <p class="text-sm italic text-gray-400 mb-6 italic">Automação total e água cristalina.</p>
-                <a href="tratamento.html" class="bg-blue-600 text-white px-8 py-3 rounded-xl font-bold uppercase text-xs">Ver Preço</a>
+            <div class="bg-white rounded-[3rem] shadow-xl overflow-hidden border-b-8 border-yellow-400 group">
+                <div class="h-64 overflow-hidden"><img src="fundo2.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
+                <div class="p-8">
+                    <h3 class="text-xl font-black text-navy uppercase italic mb-2">Aquecimento Solar</h3>
+                    <p class="text-sm italic text-gray-500 mb-6">Piscina quente o ano todo com economia máxima de energia.</p>
+                    <p class="text-2xl font-black text-blue-600 mb-6">R$ 7.800,00</p>
+                    <a href="https://wa.me/5534997373282" class="block text-center bg-navy text-white py-3 rounded-full font-bold uppercase italic text-xs">Solicitar Instalação</a>
+                </div>
             </div>
 
-            <div class="card-produto p-8 text-center flex flex-col items-center">
-                <img src="cascata.jpg" class="w-full h-48 object-contain mb-6" alt="Cascatas Splash">
-                <h3 class="text-xl font-black text-navy uppercase italic mb-2">Linha de Cascatas</h3>
-                <p class="text-sm italic text-gray-400 mb-6 italic">Beleza e relaxamento no seu quintal.</p>
-                <a href="cascatas.html" class="bg-blue-600 text-white px-8 py-3 rounded-xl font-bold uppercase text-xs">Ver Modelos</a>
+            <div class="bg-white rounded-[3rem] shadow-xl overflow-hidden border-b-8 border-blue-500 group">
+                <div class="h-64 overflow-hidden"><img src="fundo8.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
+                <div class="p-8">
+                    <h3 class="text-xl font-black text-navy uppercase italic mb-2">Iluminação LED RGB</h3>
+                    <p class="text-sm italic text-gray-500 mb-6">Controle as cores da sua piscina direto pelo smartphone.</p>
+                    <p class="text-2xl font-black text-blue-600 mb-6">R$ 2.450,00</p>
+                    <a href="https://wa.me/5534997373282" class="block text-center bg-navy text-white py-3 rounded-full font-bold uppercase italic text-xs">Ver Cores</a>
+                </div>
             </div>
 
         </div>
+
     </main>
 
-    <footer class="bg-white border-t border-gray-200 py-10 text-center text-xs text-gray-400 uppercase tracking-widest italic">
-        © 2026 GO SPLASH PISCINAS - Catalão/GO
+    <footer class="bg-white pt-20 pb-12 border-t text-center text-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 mb-16 px-4">
+                <img src="IGUi-piscinas-logo-oficial.png" class="h-10 object-contain" alt="iGUi">
+                <img src="google selos.png" class="h-16 object-contain" alt="Google">
+                <img src="mercadopago-logo.png" class="h-14 object-contain" alt="Mercado Pago">
+                <img src="reclamaaqui.png" class="h-16 object-contain" alt="Reclame Aqui">
+                <img src="seguro certificado.png" class="h-14 object-contain" alt="Seguro">
+                <img src="selos.png" class="h-14 object-contain" alt="Selos">
+            </div>
+            <div class="border-t pt-10">
+                <p class="font-black text-navy uppercase tracking-widest text-xs mb-2">GO SPLASH PISCINAS - CATALÃO/GO</p>
+                <p class="opacity-60 text-[10px] font-bold mb-8 uppercase italic">CNPJ: 50.574.273/0001-18 | É FÁCIL SER FELIZ!</p>
+            </div>
+        </div>
     </footer>
 
 </body>
