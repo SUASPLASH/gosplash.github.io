@@ -3,71 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solicitar Orçamento | GO SPLASH PISCINAS</title>
+    <title>Orçamento VIP | GO SPLASH PISCINAS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .text-navy { color: #001f3f; }
         .bg-navy { background-color: #001f3f; }
-        .border-circle { border-radius: 50px; }
+        .orcamento-banner { 
+            background: linear-gradient(rgba(0,31,63,0.6), rgba(0,31,63,0.6)), url('fundo5.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-700 font-sans">
+<body class="bg-gray-50 text-gray-800 font-sans text-left">
 
     <nav class="fixed w-full z-50 bg-white shadow-md border-b-4 border-[#dfff00]">
         <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center text-left">
             <div class="text-3xl font-black text-navy uppercase italic">GO<span class="text-yellow-400">SPLASH</span></div>
-            <div class="hidden md:flex space-x-6 font-bold text-sm uppercase tracking-widest text-navy">
+            <div class="hidden md:flex space-x-6 font-bold text-xs uppercase tracking-widest text-navy">
                 <a href="index.html" class="hover:text-blue-500">Início</a>
                 <a href="modelos.html" class="hover:text-blue-500">Piscinas</a>
                 <a href="produtos.html" class="hover:text-blue-500">Produtos</a>
-                <a href="sobre.html" class="hover:text-blue-500">A Empresa</a>
+                <a href="sobre.html" class="hover:text-blue-500 text-left">A Empresa</a>
                 <a href="orcamento.html" class="text-blue-500 border-b-2 border-blue-500">Orçamento</a>
             </div>
-            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs">
-                (34) 99737-3282
-            </a>
+            <a href="https://wa.me/5534997373282" class="bg-navy text-white px-5 py-2 rounded-full font-bold text-xs italic">(34) 99737-3282</a>
         </div>
     </nav>
 
-    <main class="pt-32 pb-20 container mx-auto px-4 max-w-4xl text-center">
-        <div class="mb-12">
-            <h1 class="text-4xl font-black text-navy uppercase italic mb-4 text-center">Solicitar Orçamento</h1>
-            <p class="text-lg italic text-gray-500">Receba uma proposta personalizada para a sua área de lazer em Catalão.</p>
+    <header class="orcamento-banner h-[50vh] flex items-center justify-center text-center text-white px-4 pt-20 text-left">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-6xl font-black uppercase italic mb-4">Solicite seu Projeto</h1>
+            <p class="text-xl italic text-yellow-400 font-bold">Consultoria técnica gratuita em Catalão e região</p>
         </div>
+    </header>
 
-        <div class="bg-white p-10 md:p-16 rounded-[3rem] shadow-xl border-t-8 border-[#dfff00]">
-            <i class="fab fa-whatsapp text-7xl text-green-500 mb-6"></i>
-            <h2 class="text-3xl font-black text-navy mb-4 uppercase">Atendimento Imediato</h2>
-            <p class="text-gray-500 text-lg mb-10 italic">
-                Nossa equipe comercial está online para tirar suas dúvidas sobre medidas, instalação e formas de pagamento.
-            </p>
-            
-            <a href="https://wa.me/5534997373282?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20piscina." 
-               class="bg-green-500 text-white border-circle px-12 py-5 text-xl font-black uppercase shadow-lg hover:scale-105 transition inline-block">
-                Enviar Mensagem Agora
-            </a>
+    <main class="py-20 container mx-auto px-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-[3rem] shadow-2xl overflow-hidden flex flex-col md:flex-row border-b-8 border-blue-600">
+            <div class="md:w-1/3 bg-navy p-10 text-white text-left">
+                <h3 class="text-2xl font-black uppercase italic mb-8 text-yellow-400">O que você ganha:</h3>
+                <ul class="space-y-6 text-sm italic">
+                    <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i> Visita técnica de um profissional especializado.</li>
+                    <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i> Projeto personalizado com Arquiteto e Engenheiro.</li>
+                    <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i> Análise do solo e melhor posição solar.</li>
+                    <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i> Orçamento detalhado com parcelamento sem juros.</li>
+                </ul>
+            </div>
 
-            <div class="mt-12 pt-8 border-t border-gray-100 grid grid-cols-1 md:grid-cols-2 gap-6 text-left text-sm italic">
-                <div>
-                    <p class="font-bold text-navy mb-2 uppercase tracking-widest"><i class="fa fa-map-marker-alt"></i> Visite nossa loja</p>
-                    <p>Av. Margon, 1303 - sl 1 - Vila Margon<br>Catalão - GO, 75711-020</p>
+            <div class="md:w-2/3 p-10 text-left">
+                <h2 class="text-3xl font-black text-navy uppercase italic mb-4">Agende Agora</h2>
+                <p class="text-gray-500 italic mb-10">Escolha a forma mais rápida de falar com nossa equipe técnica:</p>
+                
+                <div class="space-y-6">
+                    <a href="https://wa.me/5534997373282?text=Olá! Gostaria de agendar a visita técnica gratuita e o meu projeto com o engenheiro." 
+                       class="flex items-center justify-between bg-green-500 text-white p-6 rounded-2xl hover:scale-105 transition shadow-lg group">
+                        <div class="flex items-center gap-4">
+                            <i class="fab fa-whatsapp text-4xl"></i>
+                            <div>
+                                <span class="block font-black uppercase italic">WhatsApp Direto</span>
+                                <span class="text-xs opacity-80 uppercase italic font-bold">Resposta em poucos minutos</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition"></i>
+                    </a>
+
+                    <a href="modelos.html" class="flex items-center justify-between bg-gray-100 text-navy p-6 rounded-2xl hover:bg-gray-200 transition group">
+                        <div class="flex items-center gap-4 text-left">
+                            <i class="fas fa-swimming-pool text-3xl"></i>
+                            <div>
+                                <span class="block font-black uppercase italic">Ver Modelos Primeiro</span>
+                                <span class="text-xs opacity-60 uppercase italic font-bold">Escolha seu estilo favorito</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition"></i>
+                    </a>
                 </div>
-                <div>
-                    <p class="font-bold text-navy mb-2 uppercase tracking-widest"><i class="fa fa-clock"></i> Horário de Atendimento</p>
-                    <p>Segunda a Sexta: 08:00 às 18:00<br>Sábado: 08:00 às 12:00</p>
+
+                <div class="mt-12 p-6 bg-blue-50 rounded-2xl border-l-4 border-blue-500 italic text-sm text-blue-800">
+                    <i class="fas fa-info-circle mr-2"></i> Atendemos em Catalão, Ouvidor, Três Ranchos e toda a região.
                 </div>
             </div>
         </div>
-
-        <div class="mt-12 rounded-3xl overflow-hidden shadow-md grayscale hover:grayscale-0 transition duration-500 h-64">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.1568285573473!2d-47.9351052!3d-18.1633519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944438318693c04f%3A0x67392f0aaf49c39fb89!2zQXYuIE1hcmdvbiwgMTMwMyAtIHNsIDEgLSBWaWxhIE1hcmdvbiwgQ2F0YWzDo28gLSBHTywgNzU3MTEtMDIw!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
     </main>
 
-    <footer class="bg-white border-t border-gray-200 py-10 text-center text-xs text-gray-400 uppercase tracking-widest italic">
-        © 2026 GO SPLASH PISCINAS - Catalão/GO - CNPJ: 50.574.273/0001-18
-    </footer>
-
-</body>
-</html>
+    <footer class="bg-white pt-20 pb-12 border-t text-center">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 mb-16 px-4">
+                <img src="IGUi-piscinas-logo-oficial.png" class="h-10 object-contain" alt="iGUi">
+                <img src="google selos.png" class="h-16 object-contain" alt="Google">
+                <img src="mercadopago-logo.png" class="h-14 object-contain" alt="Mercado Pago">
+                <img src="reclamaaqui.png" class="h-16 object-contain" alt="
